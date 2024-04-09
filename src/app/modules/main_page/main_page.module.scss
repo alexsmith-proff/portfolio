@@ -1,0 +1,18 @@
+.main{
+    height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 165px 0px 70px;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+}
+.blobPhoto{
+    margin-right: 150px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+}

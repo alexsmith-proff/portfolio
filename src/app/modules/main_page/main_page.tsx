@@ -1,17 +1,24 @@
 
 import { FC } from "react";
 import BlobPhoto from "@/app/components/blob_photo/blob_photo";
-
-import s from './main_page.module.scss'
 import MainTitle from "@/app/components/main_title/main_title";
 
-interface MainPageProps{}
+import s from './main_page.module.scss'
 
-const MainPage: FC<MainPageProps> = ({}) => {
-    return(
-        <div>
-            <BlobPhoto fileName="/img/main-photo.png" />
-            <MainTitle />
+interface MainPageProps { }
+
+const MainPage: FC<MainPageProps> = ({ }) => {
+    return (
+        <div className={s.main}>
+            <div className={s.wrap}>
+                <div className={s.blobPhoto}>
+                    <BlobPhoto fileName="/img/main-photo.png" />
+                </div>
+                <div className={s.mainTitle}>
+                    <MainTitle />
+                </div>
+            </div>
+            <div className={s.arrow}>Arrow</div>
         </div>
     )
 }
