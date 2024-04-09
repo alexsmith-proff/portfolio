@@ -1,0 +1,50 @@
+.btn {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.border {
+    width: 100%;
+    height: 100%;
+    border: 3px dashed #fff;
+    border-radius: 50%;
+
+    &:hover {
+        animation: rotateBorder 30s linear infinite;
+    }
+}
+
+.arrow {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    transform: rotate(0deg);
+    animation: moveDown 3s infinite;
+}
+
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        top: 25px;
+    }
+
+    50% {
+        top: 32px;
+    }
+
+    100% {
+        top: 25px;
+    }
+}

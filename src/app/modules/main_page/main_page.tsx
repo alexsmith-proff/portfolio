@@ -4,6 +4,7 @@ import BlobPhoto from "@/app/components/blob_photo/blob_photo";
 import MainTitle from "@/app/components/main_title/main_title";
 
 import s from './main_page.module.scss'
+import ArrowDown from "@/app/components/arrow_down/arrow_down";
 
 interface MainPageProps { }
 
@@ -18,7 +19,10 @@ const MainPage: FC<MainPageProps> = ({ }) => {
                     <MainTitle />
                 </div>
             </div>
-            <div className={s.arrow}>Arrow</div>
+            <div className={s.arrow}>
+                <ArrowDown />
+
+            </div>
         </div>
     )
 }
