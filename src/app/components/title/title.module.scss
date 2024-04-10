@@ -1,0 +1,30 @@
+@import '../../variables.scss';
+
+.wrap{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 60px;
+}
+.title{
+    font-size: 40px;
+    color: $light-color;
+    display: inline-block;
+    // display: flex;
+    // justify-content: center;
+    position: relative;
+    &:after{
+        content: '';
+        height: 3px;
+        width: 50%;
+        position: absolute;
+        bottom: -20px;
+        left: 25%;
+        background-color: $bright-color1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title{
+        font-size: 30px;
+    }
+}
