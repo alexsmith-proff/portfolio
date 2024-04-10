@@ -5,3 +5,22 @@
     right: 0px;
     position: fixed;
 }
+
+@media screen and (max-width: 550px) {
+    .git{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .git{
+        font-size: 16px;
+        right: -20px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .git{
+        display: none;
+    }
+}

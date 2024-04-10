@@ -12,10 +12,12 @@ body {
 body {
   background-color: #030303;
   color: #F1F1F1;
+}
+.container{
   max-width: 1220px;
   margin: 0 auto;
   padding: 0px 10px;
-
+  /* background-color: #888; */
 }
 
 a {

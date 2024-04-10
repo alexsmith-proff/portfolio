@@ -8,7 +8,7 @@ interface MainTitleProps{}
 
 const MainTitle: FC<MainTitleProps> = ({ }) => {
     return(
-        <div>
+        <div className={s.text}>
             <TypeAnimationText />
             <div className={`${russo_one.variable} ${s.subText}`}>Разработчик</div>
         </div>

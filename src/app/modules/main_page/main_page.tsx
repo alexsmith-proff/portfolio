@@ -2,11 +2,10 @@
 import { FC } from "react";
 import BlobPhoto from "@/app/components/blob_photo/blob_photo";
 import MainTitle from "@/app/components/main_title/main_title";
+import ArrowDown from "@/app/components/arrow_down/arrow_down";
+import GitHubLink from "@/app/components/github_link/github_link";
 
 import s from './main_page.module.scss'
-import ArrowDown from "@/app/components/arrow_down/arrow_down";
-import Link from "next/link";
-import GitHubLink from "@/app/components/github_link/github_link";
 
 interface MainPageProps { }
 
