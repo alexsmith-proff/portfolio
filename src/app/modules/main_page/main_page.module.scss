@@ -16,3 +16,11 @@
     display: flex;
     justify-content: center;
 }
+.git{
+    // transform: translateY(-80%);
+    font-size: 20px;
+    transform: rotate(-90deg);
+    top: 50%;
+    right: 0px;
+    position: fixed;
+}

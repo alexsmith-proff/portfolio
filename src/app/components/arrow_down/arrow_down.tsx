@@ -1,7 +1,6 @@
 import { FC } from "react";
 
 import { FaArrowDown } from "react-icons/fa";
-import { FaArrowDownLong } from "react-icons/fa6";
 
 import s from './arrow_down.module.scss'
 
@@ -12,7 +11,6 @@ const ArrowDown: FC<ArrowDownProps> = ({ }) => {
         <div className={s.btn}>
             <div className={s.border}></div>
             <FaArrowDown className={s.arrow} size={32} />
-            {/* <FaArrowDownLong  className={s.arrow} size={32} /> */}
         </div>
     )
 }

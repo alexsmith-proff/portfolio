@@ -5,6 +5,7 @@ import MainTitle from "@/app/components/main_title/main_title";
 
 import s from './main_page.module.scss'
 import ArrowDown from "@/app/components/arrow_down/arrow_down";
+import Link from "next/link";
 
 interface MainPageProps { }
 
@@ -21,7 +22,12 @@ const MainPage: FC<MainPageProps> = ({ }) => {
             </div>
             <div className={s.arrow}>
                 <ArrowDown />
-
+            </div>
+            <div className={s.git}>
+                {/* Мой GITHUB */}
+                <Link href="https://github.com/alexsmith-proff" target="_blank">
+                    Мой GitHub
+                </Link>
             </div>
         </div>
     )
