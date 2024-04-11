@@ -1,0 +1,41 @@
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title{
+    flex-grow: 0;    
+}
+
+.content {
+    width: 100%;
+    flex-grow: 0.5;
+    &Wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.description {
+    width: 430px;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: justify;
+}
+
+.photo {
+    // width: 200px;
+    // height: 200px;
+    // background-color: #aee;
+}
+
+.btn {
+    align-self: center;
+}
+
+.ticker {
+    padding-bottom: 30px;
+    flex-grow: 0;    
+}

@@ -14,12 +14,12 @@ const NavBar: FC<NavBarProps> = ({}) => {
         {
             id: 2,
             name: 'Обо мне',
-            link: '/#about'
+            link: '/about'
         },
         {
             id: 3,
             name: 'Проекты',
-            link: '/#projects'
+            link: '/projects'
         },
     ]
     return(

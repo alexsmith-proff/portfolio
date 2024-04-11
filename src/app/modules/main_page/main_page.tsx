@@ -11,19 +11,21 @@ interface MainPageProps { }
 
 const MainPage: FC<MainPageProps> = ({ }) => {
     return (
-        <div className={s.main}>
-            <div className={s.wrap}>
-                <div className={s.blobPhoto}>
-                    <BlobPhoto fileName="/img/main-photo.png" />
+        <div className="container">
+            <div className={s.main}>
+                <div className={s.wrap}>
+                    <div className={s.blobPhoto}>
+                        <BlobPhoto fileName="/img/main-photo.png" />
+                    </div>
+                    <div className={s.mainTitle}>
+                        <MainTitle />
+                    </div>
                 </div>
-                <div className={s.mainTitle}>
-                    <MainTitle />
+                <div className={s.arrow}>
+                    <ArrowDown />
                 </div>
+                <GitHubLink />
             </div>
-            <div className={s.arrow}>
-                <ArrowDown />
-            </div>
-            <GitHubLink />
         </div>
     )
 }

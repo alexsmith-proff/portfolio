@@ -18,10 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <div className="container">
-          <NavBar />
-          {children}
-        </div>
+        <NavBar />
+        {children}
       </body>
     </html>
   );
