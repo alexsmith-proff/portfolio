@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0px 10px;
 }
 
 .title{
@@ -19,16 +20,18 @@
 }
 
 .description {
-    width: 430px;
+    width: 450px;
     font-size: 18px;
     line-height: 180%;
     text-align: justify;
+    text-indent: 40px;
 }
 
-.photo {
-    // width: 200px;
-    // height: 200px;
-    // background-color: #aee;
+.photoMobile{
+    display: none;
+}
+.photoDesktop {
+    display: block;
 }
 
 .btn {
@@ -38,4 +41,54 @@
 .ticker {
     padding-bottom: 30px;
     flex-grow: 0;    
+}
+
+@media screen and (max-width: 1080px) {
+    .content {
+        // flex-grow: 0.5;
+        &Wrap{
+            flex-direction: column;
+            // justify-content: space-between;
+        }
+    }
+    .description {
+        width: 100%;
+        font-size: 18px;
+        line-height: 180%;
+    }
+    .photoDesktop {
+        display: none;
+    }
+    .photoMobile{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        // width: 450px;
+        // height: 500px;
+    }
+    .btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+    .ticker{
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .section {
+        padding: 0px 0px;
+    }
+    .description {
+        font-size: 16px;
+        line-height: 160%;
+        text-indent: 20px;
+    }
+    .ticker{
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
 }

@@ -1,7 +1,8 @@
-.item{
-    display: inline-block;
-}
 .link{
-    display: flex;
-    align-items: center;
+    position: relative;
+    &Ico{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }

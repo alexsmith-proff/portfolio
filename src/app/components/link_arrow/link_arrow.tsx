@@ -14,12 +14,12 @@ interface LinkArrowProps {
     arrowGap?: number
 }
 
-const LinkArrow: FC<LinkArrowProps> = ({ url, text, textFontSize = 16, color = constants.colors.BRIGHT_COLOR1, arrowSize = 18, arrowGap = 5 }) => {
+const LinkArrow: FC<LinkArrowProps> = ({ url, text, textFontSize, color = constants.colors.BRIGHT_COLOR1, arrowSize = 18, arrowGap = 5 }) => {
     return (
-        <span className={s.item} style={{color, fontSize: textFontSize}}>
+        <span style={{color, fontSize: textFontSize}}>
             <Link className={s.link} href={url}>
                 {text}
-                <FaArrowRightLong style={{marginLeft: arrowGap}} size={arrowSize} />
+                <FaArrowRightLong className={s.linkIco} style={{marginLeft: arrowGap}} size={arrowSize} />
             </Link>
         </span>
     )

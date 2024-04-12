@@ -14,8 +14,11 @@ const MainAbout: FC = ({ }) => {
             <div className={s.content}>
                 <div className="container">
                     <div className={s.contentWrap}>
-                        <div className={s.description}>Привет. Меня зовут Кузнецов Алексей. Я являюсь Web-разработчиком более 6 лет. Web начинал с верстки, использовал JavaScript, PHP. Сейчас Backend разрабатываю на Node.js, а Frontend - на React.js. Опыт в данном стеке более 3 лет. Подробная информация обо мне <LinkArrow text="здесь" textFontSize={19} url="/about" /></div>
-                        <div className={s.photo}>
+                        <div className={s.photoMobile}>
+                            <PhotoBorderGradient width={270} height={311} borderWidth={5} imageFile="/img/big-photo.png" alt="big-photo" />
+                        </div>
+                        <div className={s.description}>Привет. Меня зовут Кузнецов Алексей. Я являюсь Web-разработчиком более 6 лет. Web начинал с верстки, использовал JavaScript, PHP. Сейчас Backend разрабатываю на Node.js, а Frontend - на React.js. Опыт в данном стеке более 3 лет. Подробная информация обо мне <LinkArrow text="здесь" url="/about" /></div>
+                        <div className={s.photoDesktop}>
                             <PhotoBorderGradient width={450} height={500} borderWidth={5} imageFile="/img/big-photo.png" alt="big-photo" />
                         </div>
                         <div className={s.btn}>
@@ -27,7 +30,6 @@ const MainAbout: FC = ({ }) => {
             <div className={s.ticker}>
                 <Ticker
                     text="JavaScript &nbsp;&nbsp;&nbsp;&nbsp; Node.js &nbsp;&nbsp;&nbsp;&nbsp; React.js &nbsp;&nbsp;&nbsp;&nbsp; Next.js &nbsp;&nbsp;&nbsp;&nbsp; Webpack &nbsp;&nbsp;&nbsp;&nbsp; Redux &nbsp;&nbsp;&nbsp;&nbsp; MobX &nbsp;&nbsp;&nbsp;&nbsp; GraphQl &nbsp;&nbsp;&nbsp;&nbsp; Nest.js &nbsp;&nbsp;&nbsp;&nbsp; WebSocket &nbsp;&nbsp;&nbsp;&nbsp; Linux &nbsp;&nbsp;&nbsp;&nbsp; MySQL &nbsp;&nbsp;&nbsp;&nbsp; Git &nbsp;&nbsp;&nbsp;&nbsp; Docker &nbsp;&nbsp;&nbsp;&nbsp; MongoDB &nbsp;&nbsp;&nbsp;&nbsp; Express.js &nbsp;&nbsp;&nbsp;&nbsp; PostgreSQL &nbsp;&nbsp;&nbsp;&nbsp;"
-                    textSize={30}
                     speed={30}
                 />
             </div>
