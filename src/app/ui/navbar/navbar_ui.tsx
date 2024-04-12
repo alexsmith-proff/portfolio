@@ -6,15 +6,16 @@ import Link from "next/link"
 
 interface NavBarUIProps {
     navBar: INavBar[]
+    onClick: (id: number) => void
 }
 
-const NavBarUI: FC<NavBarUIProps> = ({ navBar }) => {
+const NavBarUI: FC<NavBarUIProps> = ({ navBar, onClick }) => {
 
     return (
         <nav className={s.nav}>
             <ul className={s.list}>
                 {
-                    navBar.map(item => <li className={s.item} key={item.id}><Link href={item.link}>{item.name}</Link></li>)
+                    navBar.map(item => <Link href={item.link}><li className={ item.active ? `${s.item} ${s.active}` : `${s.item}`} key={item.id} onClick={() => onClick(item.id)}>{item.name}</li></Link>)
                 }
             </ul>
         </nav>

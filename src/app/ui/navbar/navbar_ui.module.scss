@@ -15,11 +15,17 @@
     border-radius: 20px;
     border: 2px solid $light-color;
     color: $light-color;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
     cursor: pointer;
+    transition: .7s;
+    &.active{
+        color: $dark-color;
+        background-color: $light-color;
+    }
 }
 
 @media screen and (max-width: 470px) {

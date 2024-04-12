@@ -1,7 +1,7 @@
 import { FC } from "react";
+import Title from "@/app/components/title/title";
 
 import s from './main_projects.module.scss'
-import Title from "@/app/components/title/title";
 
 const MainProjects: FC = ({ }) => {
     return (

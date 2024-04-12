@@ -1,29 +1,16 @@
+"use client"
+
 import { FC } from "react"
 import NavBarUI from "@/app/ui/navbar/navbar_ui"
-import { INavBar } from "@/app/interfaces/navbar.interface"
+import { useNavBar } from "./hooks/use_navbar"
 
 interface NavBarProps {}
 
 const NavBar: FC<NavBarProps> = ({}) => {
-    const navBar: INavBar[] = [
-        {
-            id: 1,
-            name: 'Главная',
-            link: '/'
-        },
-        {
-            id: 2,
-            name: 'Обо мне',
-            link: '/about'
-        },
-        {
-            id: 3,
-            name: 'Проекты',
-            link: '/projects'
-        },
-    ]
+    const {navBar, handleClick} = useNavBar()
+
     return(
-        <NavBarUI navBar={navBar} />
+        <NavBarUI navBar={navBar} onClick={handleClick} />
     )
 }
 
