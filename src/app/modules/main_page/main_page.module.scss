@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 165px 0px 70px;
+    padding: 165px 0px 30px;
 }
 
 .wrap {
@@ -20,9 +20,41 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 1367px) and (max-height: 768px) {
+    .main {
+        padding: 65px 0px 30px;
+    }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+    .main {
+        padding: 40px 0px 30px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .blobPhoto {
         margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (max-height: 600px) {
+    .main {
+        padding: 40px 0px 30px;
+    }
+
+    .wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    .blobPhoto {
+        margin-right: 150px;
+    }
+
+    .arrow {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -42,13 +74,73 @@
     .main {
         padding: 50px 0px 50px;
     }
+
     .wrap {
         flex-direction: column;
         justify-content: center;
     }
+
     .blobPhoto {
         margin-right: 0px;
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .wrap {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 854px) and (max-height: 480px) {
+    .main {
+        padding: 20px 0px 10px;
+    }
+
+    .wrap {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .blobPhoto {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) and (max-height: 600px) {
+    .main {
+        padding: 40px 0px 30px;
+    }
+
+    .wrap {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .blobPhoto {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 540px) and (max-height: 720px) {
+    .main {
+        padding: 00px 0px 30px;
+    }
+
+    .blobPhoto {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 384px) and (max-height: 667px) {
+    .main {
+        padding: 10px 0px 30px;
+    }
+
+    .blobPhoto {
+        margin-right: 0px;
+        margin-bottom: 10px;
     }
 }
 

@@ -4,6 +4,12 @@
     padding-top: 30px;
 }
 
+@media screen and (max-width: 1200px) and (max-height: 600px) {
+    .subText{
+        font-size: 50px;
+        padding-top: 20px;
+    }
+}
 
 @media screen and (max-width: 1100px) {
     .subText{
@@ -20,9 +26,39 @@
     }
 }
 
+@media screen and (max-width: 854px) and (max-height: 480px) {
+    .subText{
+        font-size: 45px;
+        padding-top: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) and (max-height: 600px) {
+    .subText{
+        font-size: 45px;
+        padding-top: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 540px) and (max-height: 720px) {
+    .subText{
+        font-size: 40px;
+        padding-top: 20px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .subText{
         font-size: 40px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .subText{
+        font-size: 36px;
         padding-top: 20px;
     }
 }

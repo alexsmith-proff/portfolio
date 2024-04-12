@@ -22,6 +22,12 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 470px) {
+    .nav{
+        padding: 35px 10px;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .list{
         gap: 30px;

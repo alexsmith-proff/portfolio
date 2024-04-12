@@ -20,7 +20,7 @@
 .arrow {
     position: absolute;
     top: 25px;
-    left: 25px;
+    left: 27px;
     transform: rotate(0deg);
     animation: moveDown 3s infinite;
 }
@@ -46,5 +46,29 @@
 
     100% {
         top: 25px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .btn {
+        width: 60px;
+        height: 60px;
+    }
+    .arrow {
+        top: 15px;
+        left: 17px;
+    }
+    @keyframes moveDown {
+        0% {
+            top: 15px;
+        }
+    
+        50% {
+            top: 22px;
+        }
+    
+        100% {
+            top: 15px;
+        }
     }
 }

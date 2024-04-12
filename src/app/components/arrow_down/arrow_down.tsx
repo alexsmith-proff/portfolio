@@ -13,7 +13,7 @@ const ArrowDown: FC<ArrowDownProps> = ({ }) => {
     return(
         <div className={s.btn} onClick={() => router.push('/#main_about')}>
             <div className={s.border}></div>
-            <FaArrowDown className={s.arrow} size={32} />
+            <FaArrowDown className={s.arrow} size={28} />
         </div>
     )
 }
