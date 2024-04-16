@@ -17,7 +17,7 @@ const MainAbout: FC = ({ }) => {
                         <div className={s.photoMobile}>
                             <PhotoBorderGradient width={270} height={311} borderWidth={5} imageFile="/img/big-photo.png" alt="big-photo" />
                         </div>
-                        <div className={s.description}>Привет. Меня зовут Кузнецов Алексей. Я являюсь Web-разработчиком более 6 лет. Web начинал с верстки, использовал JavaScript, PHP. Сейчас Backend разрабатываю на Node.js, а Frontend - на React.js. Опыт в данном стеке более 3 лет. Подробная информация обо мне <LinkArrow text="здесь" url="/about" /></div>
+                        <div className={s.description}>Привет. Меня зовут Алексей Кузнецов. Я являюсь Web-разработчиком более 6 лет. Web начинал с верстки, использовал JavaScript, PHP. Сейчас Backend разрабатываю на Node.js, а Frontend - на React.js. Опыт в данном стеке более 3 лет. Подробная информация обо мне <LinkArrow text="здесь" url="/about" /></div>
                         <div className={s.photoDesktop}>
                             <PhotoBorderGradient width={450} height={500} borderWidth={5} imageFile="/img/big-photo.png" alt="big-photo" />
                         </div>
