@@ -29,7 +29,7 @@ const MainAbout: FC = ({ }) => {
             </div>
             <div className={s.ticker}>
                 <Ticker
-                    text="JavaScript &nbsp;&nbsp;&nbsp;&nbsp; Node.js &nbsp;&nbsp;&nbsp;&nbsp; React.js &nbsp;&nbsp;&nbsp;&nbsp; Next.js &nbsp;&nbsp;&nbsp;&nbsp; Webpack &nbsp;&nbsp;&nbsp;&nbsp; Redux &nbsp;&nbsp;&nbsp;&nbsp; MobX &nbsp;&nbsp;&nbsp;&nbsp; GraphQl &nbsp;&nbsp;&nbsp;&nbsp; Nest.js &nbsp;&nbsp;&nbsp;&nbsp; WebSocket &nbsp;&nbsp;&nbsp;&nbsp; Linux &nbsp;&nbsp;&nbsp;&nbsp; MySQL &nbsp;&nbsp;&nbsp;&nbsp; Git &nbsp;&nbsp;&nbsp;&nbsp; Docker &nbsp;&nbsp;&nbsp;&nbsp; MongoDB &nbsp;&nbsp;&nbsp;&nbsp; Express.js &nbsp;&nbsp;&nbsp;&nbsp; PostgreSQL &nbsp;&nbsp;&nbsp;&nbsp;"
+                    text="JavaScript &nbsp;&nbsp;&nbsp;&nbsp; Node.js &nbsp;&nbsp;&nbsp;&nbsp; React.js &nbsp;&nbsp;&nbsp;&nbsp; Next.js &nbsp;&nbsp;&nbsp;&nbsp; Webpack &nbsp;&nbsp;&nbsp;&nbsp; Redux &nbsp;&nbsp;&nbsp;&nbsp; MobX &nbsp;&nbsp;&nbsp;&nbsp; GraphQL &nbsp;&nbsp;&nbsp;&nbsp; Nest.js &nbsp;&nbsp;&nbsp;&nbsp; WebSocket &nbsp;&nbsp;&nbsp;&nbsp; Linux &nbsp;&nbsp;&nbsp;&nbsp; MySQL &nbsp;&nbsp;&nbsp;&nbsp; Git &nbsp;&nbsp;&nbsp;&nbsp; Docker &nbsp;&nbsp;&nbsp;&nbsp; MongoDB &nbsp;&nbsp;&nbsp;&nbsp; Express.js &nbsp;&nbsp;&nbsp;&nbsp; PostgreSQL &nbsp;&nbsp;&nbsp;&nbsp;"
                     speed={30}
                 />
             </div>
