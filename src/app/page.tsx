@@ -1,11 +1,11 @@
 import MainAbout from "./modules/main_about/main_about";
-import MainPage from "./modules/main_page/main_page";
+import MainScreen from "./modules/main_screen/main_screen";
 import MainProjects from "./modules/main_projects/main_projects";
 
-export default function Home() {
+export default function MainPage() {
   return (
     <main>
-      <MainPage />
+      <MainScreen />
       <MainAbout />
       <MainProjects />
     </main>

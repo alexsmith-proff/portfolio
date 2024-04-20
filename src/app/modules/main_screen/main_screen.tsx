@@ -5,11 +5,11 @@ import MainTitle from "@/app/components/main_title/main_title";
 import ArrowDown from "@/app/components/arrow_down/arrow_down";
 import GitHubLink from "@/app/components/github_link/github_link";
 
-import s from './main_page.module.scss'
+import s from './main_screen.module.scss'
 
-interface MainPageProps { }
+interface MainScreenProps { }
 
-const MainPage: FC<MainPageProps> = ({ }) => {
+const MainScreen: FC<MainScreenProps> = ({ }) => {
     return (
         <div className="container">
             <div className={s.main}>
@@ -30,4 +30,4 @@ const MainPage: FC<MainPageProps> = ({ }) => {
     )
 }
 
-export default MainPage
+export default MainScreen

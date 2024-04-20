@@ -1,15 +1,17 @@
 import { Metadata } from "next";
-import { FC } from "react";
+import AboutScreen from "../modules/about_screen/about_screen";
+import MainProjects from "../modules/main_projects/main_projects";
 
 export const metadata: Metadata = {
     title: "Обо мне",
     description: "Обо мне",
   };
 
-const AboutPage: FC = () => {
+export default function AboutPage() {
     return(
-        <div>about</div>
+        <main>
+            <AboutScreen />
+            <MainProjects />
+        </main>
     )
 }
-
-export default AboutPage
