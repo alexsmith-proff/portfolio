@@ -10,10 +10,11 @@ export interface IProject {
     title: string
     description: string
     stackExpand: string
+    gitUrl?: string
     media: IMedia[]
 }
 
-export interface IProjectCard extends Omit<IProject, 'description' | 'stackExpand' | 'media'> {
+export interface IProjectCard extends Omit<IProject, 'description' | 'stackExpand' | 'gitUrl' | 'media'> {
     stackShort: string
     bgFileName: string
 }

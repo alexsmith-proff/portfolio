@@ -6,11 +6,15 @@ import s from './project_card_item.module.scss'
 
 interface ProjectCardItemProps{
     project: IProjectCard
+    click: () => void
 }
 
-const ProjectCardItem: FC<ProjectCardItemProps> = ({ project }) => {
+const ProjectCardItem: FC<ProjectCardItemProps> = ({ project, click }) => {
+    const handleClick = () => {
+        click()
+    }
     return (
-        <ProjectCardItemUI id={project.id} title={project.title} stackShort={project.stackShort} bgFileName={project.bgFileName} />
+        <ProjectCardItemUI id={project.id} title={project.title} stackShort={project.stackShort} bgFileName={project.bgFileName} click={handleClick} />
     )
 }
 

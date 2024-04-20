@@ -7,9 +7,11 @@ import ProjectsCardList from "@/app/components/projects_card_list/projects_card_
 const MainProjects: FC = ({ }) => {
     return (
         <div className={s.section} id="main_projects">
-            <Title className={s.title} title="Мои проекты" />
-            <div className={s.projectsCardList}>
-                <ProjectsCardList />
+            <div className="container">
+                <Title className={s.title} title="Мои проекты" />
+                <div className={s.projectsCardList}>
+                    <ProjectsCardList />
+                </div>
             </div>
         </div>
     )

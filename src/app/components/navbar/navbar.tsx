@@ -2,15 +2,16 @@
 
 import { FC } from "react"
 import NavBarUI from "@/app/ui/navbar/navbar_ui"
-import { useNavBar } from "./hooks/use_navbar"
+import { navBarItems } from "@/app/constants/navbar"
+import { usePathname } from "next/navigation"
 
 interface NavBarProps {}
 
-const NavBar: FC<NavBarProps> = ({}) => {
-    const {navBar, handleClick} = useNavBar()
+const NavBar: FC<NavBarProps> = ({ }) => {
+    const pathName = usePathname()
 
-    return(
-        <NavBarUI navBar={navBar} onClick={handleClick} />
+    return (
+        <NavBarUI navBar={navBarItems} pathName={pathName} />
     )
 }
 

@@ -1,7 +1,7 @@
 import { FC } from "react";
+import Image from "next/image";
 
 import s from './blob_photo.module.scss'
-import Image from "next/image";
 
 interface BlobPhotoProps{
     fileName: string
@@ -10,7 +10,7 @@ interface BlobPhotoProps{
 const BlobPhoto: FC<BlobPhotoProps> = ({ fileName }) => {
     return(
         <div>
-            <Image className={s.box} src={fileName} width={450} height={450} alt="main-photo" />
+            <Image className={s.box} src={fileName} width={450} height={450} alt="main-photo" priority={true} />
         </div>
     )
 }
