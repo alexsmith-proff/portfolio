@@ -1,5 +1,5 @@
 .section {
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,6 +39,7 @@
 }
 
 .ticker {
+    padding-top: 30px;
     padding-bottom: 30px;
     flex-grow: 0;    
 }
@@ -73,7 +74,6 @@
 
 @media screen and (max-width: 1024px) and (max-height: 600px) {
     .ticker{
-        padding-top: 20px;
         padding-bottom: 5px;
     }
 }
@@ -88,7 +88,6 @@
         text-indent: 20px;
     }
     .ticker{
-        padding-top: 20px;
         padding-bottom: 5px;
     }
 }

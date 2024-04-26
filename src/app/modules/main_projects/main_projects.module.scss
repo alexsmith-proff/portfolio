@@ -4,3 +4,14 @@
 .projectsCardList{
     padding-top: 120px;
 }
+
+@media screen and (max-width: 989px) {
+    .projectsCardList{
+        padding-top: 100px;
+    }
+}
+@media screen and (max-width: 619px) {
+    .projectsCardList{
+        padding-top: 30px;
+    }
+}

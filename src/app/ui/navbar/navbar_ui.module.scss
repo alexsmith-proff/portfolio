@@ -36,13 +36,24 @@
 
 @media screen and (max-width: 550px) {
     .list{
-        gap: 30px;
+        justify-content: space-between;
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 550px) {
+    .list{
+        gap: 0px;
+    }
+}
+@media screen and (max-width: 390px) {
     .item{
-        height: 30px;
+        width: 100px;
+        height: 40px;
         font-size: 14px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .item{
+        width: 90px;
     }
 }
