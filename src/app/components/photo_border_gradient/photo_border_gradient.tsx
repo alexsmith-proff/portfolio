@@ -54,7 +54,7 @@ const PhotoBorderGradient: FC<PhotoBorderGradientProps> = ({ width, height, bord
     }, [])
 
     return (
-        <div className={s.item} style={{ width: widthPhoto + 1.2 * borderWidth, height: heightPhoto + 1.2 * borderWidth }}>
+        <div className={s.item} style={{ width: widthPhoto + 1.2 * borderWidth, height: heightPhoto + 1.2 * borderWidth, objectFit: "cover" }}>
             <Image
                 className={s.img}
                 src={imageFile}

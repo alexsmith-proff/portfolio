@@ -1,6 +1,6 @@
 // import { MediaType } from "../enums/projects.enum"
 
-interface IMedia {
+export interface IMedia {
     fileName: string
     type: 'image' | 'video'
 }
