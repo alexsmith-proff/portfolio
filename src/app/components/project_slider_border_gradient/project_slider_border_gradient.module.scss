@@ -1,0 +1,45 @@
+@import '../../variables.scss';
+
+.item {
+    // background: conic-gradient(from var(--angle), $light-color, $bright-color1);
+    background: linear-gradient(var(--angle), $light-color, $bright-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    animation: 5s rotate linear infinite;
+}
+
+.img {
+    // border: 3px solid;
+    border-radius: 40px;
+    // border-image: linear-gradient(to right, green, yellow) 1;
+}
+
+.slider{
+    position: relative;
+    cursor: pointer;
+    &:hover .icon{
+        opacity: 1;
+    }
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 0;
+    transition: .7s;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
