@@ -14,7 +14,7 @@ export const navBarItems = [
     {
         id: 3,
         name: 'Проекты',
-        link: '/projects',
+        link: '/project/1',
         active: false
     }
 ]
