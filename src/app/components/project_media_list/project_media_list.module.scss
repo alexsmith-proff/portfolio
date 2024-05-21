@@ -1,4 +1,30 @@
-.list{
-    overflow-y: scroll;
+@import '../../variables.scss';
+
+.list {
     height: 500px;
+    overflow-y: auto;
+    padding-right: 7px;
+    cursor: pointer;
+
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: $light-color;
+        border-radius: 3px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $bright-color1;
+        border-radius: 3px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $bright-color1-hover;
+    }
+
 }

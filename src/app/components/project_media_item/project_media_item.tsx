@@ -6,12 +6,14 @@ import s from './project_media_item.module.scss'
 
 interface ProjectMediaItemProps {
     media: IMedia
+    active: boolean
+    click: () => void
 }
 
-const ProjectMediaItem: FC<ProjectMediaItemProps> = ({ media }) => {
+const ProjectMediaItem: FC<ProjectMediaItemProps> = ({ media, active, click }) => {
     return (
-        <li>
-            <Image className={s.item} src={media.fileName} width={130} height={80} alt="../img/diva/diva-bg.png" />
+        <li onClick={click}>
+            <Image className={active ? `${s.item} ${s.active}` : s.item} src={media.fileName} width={130} height={80} alt="../img/diva/diva-bg.png" />
         </li>
     )
 }

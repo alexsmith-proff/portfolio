@@ -25,11 +25,15 @@ const ProjectMedia: FC<ProjectMediaProps> = ({ project }) => {
         }
     }
 
+    const handleClickList = (index: number) => {
+        setActiveMediaIndex(index)
+    }
+
     return (
         <div>
             <div className={s.wrap}>
                 <ProjectMediaSlider className={s.slider} media={project.media[activeMediaIndex]} prev={handlePrevClick} next={handleNextClick} />
-                <ProjectMediaList media={project.media} />
+                <ProjectMediaList media={project.media} activeIndex={activeMediaIndex} click={handleClickList} />
             </div>
         </div>
     )

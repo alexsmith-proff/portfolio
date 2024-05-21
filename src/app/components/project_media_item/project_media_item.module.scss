@@ -1,4 +1,10 @@
-.item{
+@import '../../variables.scss';
+
+.item {
     border-radius: 10px;
     margin-bottom: 10px;
+
+    &.active {
+        border: 3px solid $bright-color1;
+    }
 }
