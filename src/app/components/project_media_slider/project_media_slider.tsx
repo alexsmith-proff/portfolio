@@ -8,14 +8,15 @@ import ProjectSliderBorderGradient from "../project_slider_border_gradient/proje
 
 interface ProjectMediaSliderProps {
     media: IMedia
+    className?: string
     prev: () => void
     next: () => void
 }
 
-const ProjectMediaSlider: FC<ProjectMediaSliderProps> = ({ media, prev, next }) => {
+const ProjectMediaSlider: FC<ProjectMediaSliderProps> = ({ media, className, prev, next }) => {
     return (
-        <div>
-            <ProjectSliderBorderGradient width={500} height={350} borderWidth={7} media={media} alt={media.fileName} />
+        <div className={className}>
+            <ProjectSliderBorderGradient width={600} height={500} borderWidth={7} media={media} alt={media.fileName} />
             <div onClick={prev}>prev</div>
             <div onClick={next}>next</div>
         </div>

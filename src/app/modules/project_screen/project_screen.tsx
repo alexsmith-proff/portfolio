@@ -5,7 +5,7 @@ import ProjectText from "@/app/components/project_text/project_text";
 
 import s from './project_screen.module.scss'
 
-interface ProjectScreenProps{
+interface ProjectScreenProps {
     project: IProject
 }
 
@@ -13,12 +13,13 @@ const ProjectScreen: FC<ProjectScreenProps> = ({ project }) => {
     return (
         <div className={s.main}>
             <div className="container">
+                <h1 className={s.title}>{project.title}</h1>
                 <div className={s.content}>
                     {/* <div className={s.media}> */}
-                        <ProjectMedia project={project} />
+                    <ProjectMedia project={project} />
                     {/* </div> */}
                     {/* <div className={s.text}> */}
-                        <ProjectText project={project} />
+                    <ProjectText project={project} />
                     {/* </div> */}
                 </div>
             </div>

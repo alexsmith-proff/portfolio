@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { russo_one } from "@/app/fonts";
+import ProjectMediaItem from "../project_media_item/project_media_item";
+import { IMedia } from "@/app/interfaces/projects.interface";
 
 import s from './project_media_list.module.scss'
-import { IMedia } from "@/app/interfaces/projects.interface";
 
 interface ProjectMediaListProps {
     media: IMedia[]
@@ -10,8 +10,11 @@ interface ProjectMediaListProps {
 
 const ProjectMediaList: FC<ProjectMediaListProps> = ({ media }) => {
     return (
-        <div>
-        </div>
+        <ul className={s.list}>
+            {
+                media.map((item, index) => <ProjectMediaItem media={item} key={index} />)
+            }
+        </ul>
     )
 }
 
