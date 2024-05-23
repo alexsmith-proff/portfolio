@@ -6,6 +6,10 @@ import ProjectMediaList from "../project_media_list/project_media_list";
 import { IProject } from "@/app/interfaces/projects.interface";
 
 import s from './project_media.module.scss'
+import LinkArrow from "../link_arrow/link_arrow";
+import TextArrow from "../text_arrow/text_arrow";
+import { projects } from "@/app/constants/projects";
+import { useRouter } from "next/navigation";
 
 interface ProjectMediaProps {
     project: IProject
@@ -13,14 +17,15 @@ interface ProjectMediaProps {
 
 const ProjectMedia: FC<ProjectMediaProps> = ({ project }) => {
     const [activeMediaIndex, setActiveMediaIndex] = useState(0)
+    const router = useRouter()
 
     const handlePrevClick = () => {
-        if(activeMediaIndex !== 0){
+        if (activeMediaIndex !== 0) {
             setActiveMediaIndex(prev => prev - 1)
         }
     }
     const handleNextClick = () => {
-        if(activeMediaIndex !== project.media.length - 1){
+        if (activeMediaIndex !== project.media.length - 1) {
             setActiveMediaIndex(prev => prev + 1)
         }
     }
@@ -29,11 +34,24 @@ const ProjectMedia: FC<ProjectMediaProps> = ({ project }) => {
         setActiveMediaIndex(index)
     }
 
+// По кругу    
+    const handleClickNextProject = () => {
+        const a = projects.find(item => item.serialNumber === project.serialNumber + 1)?.id
+        if(project.serialNumber !== projects.length){
+            router.push(`/project/${projects.find(item => item.serialNumber === project.serialNumber + 1)?.id}`)
+        }else{
+            router.push(`/project/${projects.find(item => item.serialNumber === 1)?.id}`)
+        }
+    }
+
     return (
         <div>
             <div className={s.wrap}>
                 <ProjectMediaSlider className={s.slider} media={project.media[activeMediaIndex]} prev={handlePrevClick} next={handleNextClick} />
                 <ProjectMediaList media={project.media} activeIndex={activeMediaIndex} click={handleClickList} />
+            </div>
+            <div className={s.next}>
+                <TextArrow text="Следующий проект" click={handleClickNextProject} />
             </div>
         </div>
     )

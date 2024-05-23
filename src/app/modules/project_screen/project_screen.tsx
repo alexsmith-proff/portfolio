@@ -15,12 +15,8 @@ const ProjectScreen: FC<ProjectScreenProps> = ({ project }) => {
             <div className="container">
                 <h1 className={s.title}>{project.title}</h1>
                 <div className={s.content}>
-                    {/* <div className={s.media}> */}
                     <ProjectMedia project={project} />
-                    {/* </div> */}
-                    {/* <div className={s.text}> */}
                     <ProjectText project={project} />
-                    {/* </div> */}
                 </div>
             </div>
         </div>

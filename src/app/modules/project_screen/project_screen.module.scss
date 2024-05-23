@@ -8,7 +8,24 @@
     justify-content: space-between;
 }
 .title{
-    // font-size: 50px;
-    text-align: center;
-    margin-bottom: 100px;
+    // color: $bright-color1;
+    margin-bottom: 70px;
 }
+
+// .title{
+//     display: inline-block;
+//     margin-bottom: 70px;
+//     position: relative;
+//     &::after{
+//         content: '';
+//         background-color: $bright-color2;
+//         position: absolute;
+//         left: 0;
+//         bottom: -10px;
+//         height: 2px;
+//         width: 100%;
+//     }
+//     // text-align: center;
+// }
+
+

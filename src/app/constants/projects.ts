@@ -3,9 +3,11 @@ import { IProject, IProjectCard } from "../interfaces/projects.interface";
 export const projects: IProject[] = [
     {
         id: 1,
+        serialNumber: 1,
         title: 'Интернет магазин продажи цветов',
-        description: 'Просто описание про Интернет магазин продажи цветов',
-        stackExpand: 'NestJS/Next.js PostgreSQL GraphQL REDUX',
+        description: 'Интернет магазин продажи цветов. В данном проекте реализована регистрация, авторизация пользователей, просмотр товаров, фильтрация товаров, корзина. Имеется админ панель, которая позволяет создавать контент: разделы меню, посты для CEO, товары с описанием и медиа информацией ',
+        stackExpand: 'NestJS, TypeScript, PostgreSQL, GraphQL, Apollo, Next.js, Redux Toolkit, Formik Axios, Jest, React Testing Library, Docker',
+        gitUrl: 'https://github.com/alexsmith-proff/marketplace_of_flowers',
         media: [
             {
                 fileName: '/img/marketplace_of_flowers/marketplace_of_flowers1.png',
@@ -68,6 +70,7 @@ export const projects: IProject[] = [
     },
     {
         id: 2,
+        serialNumber: 2,
         title: 'Коммутатор IP телефонии',
         description: 'Просто описание про Коммутатор IP телефонии',
         stackExpand: 'React.js WebSocket MobX',
@@ -125,6 +128,7 @@ export const projects: IProject[] = [
     },
     {
         id: 3,
+        serialNumber: 3,
         title: 'Внутренний проект - Тестирование знаний по охране труда',
         description: 'Просто описание про Внутренний проект - Тестирование знаний по охране труда',
         stackExpand: 'Express Next.js Redux MongoDB',
@@ -158,6 +162,7 @@ export const projects: IProject[] = [
     },
     {
         id: 4,
+        serialNumber: 4,
         title: 'КИПР - Комплекс Измерения Параметров Радиостанций',
         description: 'Просто описание про КИПР - Комплекс Измерения Параметров Радиостанций',
         stackExpand: 'React MobX MUI GraphQL',
@@ -188,6 +193,7 @@ export const projects: IProject[] = [
     },
     {
         id: 5,
+        serialNumber: 5,
         title: 'Сайт агентства недвижимости',
         description: 'Просто описание про ДИВА недвижимость',
         stackExpand: 'Express Next.js',
@@ -226,6 +232,7 @@ export const projects: IProject[] = [
     },
     {
         id: 6,
+        serialNumber: 6,
         title: 'Интернет магазин продажи строительных материалов',
         description: 'Просто описание про Интернет магазин продажи строительных материалов',
         stackExpand: 'Express React',
@@ -246,36 +253,42 @@ export const projects: IProject[] = [
 export const projectCards: IProjectCard[] = [
     {
         id: 1,
+        serialNumber: 1,
         title: 'Интернет магазин цветов',
         stackShort: `NestJS Next.js PostgreSQL`,
         bgFileName: '../img/marketplace_of_flowers/marketplace_of_flowers-bg.png'
     },
     {
         id: 2,
+        serialNumber: 2,
         title: 'Коммутатор IP телефонии',
         stackShort: `React.js WebSocket MobX`,
         bgFileName: '../img/commutators_frontend/commutators_frontend-bg.png'
     },
     {
         id: 3,
+        serialNumber: 3,
         title: 'Тестирование по охране труда',
         stackShort: `Express Next.js MongoDB`,
         bgFileName: '../img/safety_and_health/safety_and_health-video.gif'
     },
     {
         id: 4,
+        serialNumber: 4,
         title: 'КИПР - Комплекс Измерения Параметров Радиостанций',
         stackShort: `React MobX MUI GraphQL`,
         bgFileName: '../img/kipr/kipr-bg.png'
     },
     {
         id: 5,
+        serialNumber: 5,
         title: 'Сайт агентства недвижимостий',
         stackShort: `Express Next.js`,
         bgFileName: '../img/diva/diva-bg.png'
     },
     {
         id: 6,
+        serialNumber: 6,
         title: 'Интернет магазин строительных материалов',
         stackShort: `Express React`,
         bgFileName: '../img/magazin-stroy-master/magazin-stroy-master-bg.png'

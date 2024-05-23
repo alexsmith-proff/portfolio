@@ -1,3 +1,19 @@
-.text{
+@import '../../variables.scss';
+
+.item{
     width: 400px;
+}
+
+.title{
+    color: $bright-color2;
+    margin-bottom: 10px;
+}
+.text{
+    font-size: 18px;
+    line-height: 200%;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.github{
+    font-size: 14px;
 }

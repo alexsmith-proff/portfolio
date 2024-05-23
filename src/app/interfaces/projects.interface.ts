@@ -7,6 +7,7 @@ export interface IMedia {
 
 export interface IProject {
     id: number
+    serialNumber: number
     title: string
     description: string
     stackExpand: string

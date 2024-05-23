@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { constants } from "@/app/constants";
 
-import s from './link_arrow.module.scss'
+import s from './text_arrow.module.scss'
 
 interface TextArrowProps {
     text?: string
