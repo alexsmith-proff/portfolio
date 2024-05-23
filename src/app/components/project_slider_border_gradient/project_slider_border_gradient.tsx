@@ -13,9 +13,11 @@ interface ProjectSliderBorderGradientProps {
     borderWidth: number
     media: IMedia
     alt?: string
+    prev: () => void
+    next: () => void
 }
 
-const ProjectSliderBorderGradient: FC<ProjectSliderBorderGradientProps> = ({ width, height, borderWidth, media, alt = 'photo' }) => {
+const ProjectSliderBorderGradient: FC<ProjectSliderBorderGradientProps> = ({ width, height, borderWidth, media, alt = 'photo', prev, next }) => {
     // Размер фото
     const [widthPhoto, setWidthPhoto] = useState(0)
     const [heightPhoto, setHeightPhoto] = useState(0)
@@ -72,7 +74,7 @@ const ProjectSliderBorderGradient: FC<ProjectSliderBorderGradientProps> = ({ wid
             {
                 media.type === 'image' ? (
                     <div className={s.icon}>
-                        <svg stroke={constants.colors.BRIGHT_COLOR1} fill={constants.colors.BRIGHT_COLOR1} stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="50px" width="50px" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Zm8.25-3.75a.75.75 0 0 1 .75.75v2.25h2.25a.75.75 0 0 1 0 1.5h-2.25v2.25a.75.75 0 0 1-1.5 0v-2.25H7.5a.75.75 0 0 1 0-1.5h2.25V7.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd"></path></svg>
+                        <svg stroke={constants.colors.BRIGHT_COLOR1} fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="47px" width="47px" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
                     </div>
                 )
                     : (
@@ -81,6 +83,12 @@ const ProjectSliderBorderGradient: FC<ProjectSliderBorderGradientProps> = ({ wid
                         </div>
                     )
             }
+            <div className={`${s.arrow} ${s.left}`} onClick={prev}>
+                <svg stroke={constants.colors.BRIGHT_COLOR1} fill={constants.colors.BRIGHT_COLOR1} stroke-width="0" viewBox="0 0 320 512" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg"><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+            </div>
+            <div className={`${s.arrow} ${s.right}`} onClick={next}>
+                <svg stroke={constants.colors.BRIGHT_COLOR1} fill={constants.colors.BRIGHT_COLOR1} stroke-width="0" viewBox="0 0 320 512" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </div>
         </div>
     )
 }

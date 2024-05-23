@@ -146,7 +146,7 @@ export const projects: IProject[] = [
                 type: "image"
             },
             {
-                fileName: '/img/safety_and_health/safety_and_health.png',
+                fileName: '/img/safety_and_health/safety_and_health5.png',
                 type: "image"
             },
 

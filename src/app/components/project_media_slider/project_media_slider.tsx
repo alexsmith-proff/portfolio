@@ -16,9 +16,9 @@ interface ProjectMediaSliderProps {
 const ProjectMediaSlider: FC<ProjectMediaSliderProps> = ({ media, className, prev, next }) => {
     return (
         <div className={className}>
-            <ProjectSliderBorderGradient width={600} height={500} borderWidth={7} media={media} alt={media.fileName} />
-            <div onClick={prev}>prev</div>
-            <div onClick={next}>next</div>
+            <ProjectSliderBorderGradient width={600} height={500} borderWidth={7} media={media} alt={media.fileName} prev={prev} next={next} />
+            {/* <div onClick={prev}>prev</div> */}
+            {/* <div onClick={next}>next</div> */}
         </div>
     )
 }
