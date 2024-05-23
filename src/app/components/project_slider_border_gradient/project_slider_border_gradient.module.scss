@@ -42,7 +42,8 @@
 }
 
 .arrow {
-    background-color: rgb(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
     position: absolute;
     top: 50%;
     translate: 0% -50%;
@@ -50,11 +51,14 @@
     transition: .7s;
 
     &.left {
-        left: 0;
+        left: 7px;
     }
 
     &.right {
-        right: 0;
+        right: 7px;
+    }
+    &:hover{
+        background-color: rgba(255, 255, 255, 1);        
     }
 }
 
