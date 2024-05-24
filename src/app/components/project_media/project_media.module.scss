@@ -1,3 +1,6 @@
+.item{
+    display: inline-block;
+}
 .wrap{
     display: flex;
 }
@@ -6,4 +9,33 @@
 }
 .next{
     margin-top: 30px;
+}
+
+@media screen and (max-width: 790px) {
+    .wrap{
+        flex-direction: column;
+    }
+    .slider{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .item{
+        padding: 40px 10px 0px;
+    }
+    
+    .title{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .text{
+        font-size: 14px;
+        line-height: 160%;
+        text-align: justify;
+        margin-bottom: 25px;
+    }
+    .github{
+        font-size: 12px;
+    }
 }

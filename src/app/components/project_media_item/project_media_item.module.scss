@@ -9,3 +9,9 @@
         border: 3px solid $bright-color2;
     }
 }
+
+@media screen and (max-width: 790px) {
+    .img{
+        margin-right: 10px;
+    }
+}

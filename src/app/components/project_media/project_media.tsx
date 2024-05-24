@@ -44,7 +44,7 @@ const ProjectMedia: FC<ProjectMediaProps> = ({ project }) => {
     }
 
     return (
-        <div>
+        <div className={s.item}>
             <div className={s.wrap}>
                 <ProjectMediaSlider className={s.slider} media={project.media[activeMediaIndex]} activeMediaIndex={activeMediaIndex} mediaMaxIndex={project.media.length} prev={handlePrevClick} next={handleNextClick} />
                 <ProjectMediaList media={project.media} activeIndex={activeMediaIndex} click={handleClickList} />

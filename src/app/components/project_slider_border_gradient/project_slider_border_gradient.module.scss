@@ -11,9 +11,7 @@
 }
 
 .img {
-    // border: 3px solid;
     border-radius: 40px;
-    // border-image: linear-gradient(to right, green, yellow) 1;
 }
 
 .slider {
@@ -72,4 +70,27 @@
     syntax: '<angle>';
     initial-value: 0deg;
     inherits: false;
+}
+
+@media screen and (max-width: 640px) {
+    .item {
+        border-radius: 20px;
+    }
+    .img {
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .icon {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
 }

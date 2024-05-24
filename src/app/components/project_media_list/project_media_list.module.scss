@@ -26,5 +26,57 @@
     &::-webkit-scrollbar-thumb:hover {
         background: $bright-color1-hover;
     }
+}
 
+@media screen and (max-width: 790px) {
+    .list {
+        display: flex;
+        width: 608px;
+        height: 120px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-right: 0px;
+        padding-top: 20px;
+        cursor: pointer;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+            height: 7px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: $light-color;
+            border-radius: 3px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $bright-color1;
+            border-radius: 3px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: $bright-color1-hover;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .list {
+        width: 505px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .list {
+        width: 405px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .list {
+        display: none;
+    }
 }
