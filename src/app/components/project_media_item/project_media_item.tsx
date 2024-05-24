@@ -13,7 +13,7 @@ interface ProjectMediaItemProps {
 const ProjectMediaItem: FC<ProjectMediaItemProps> = ({ media, active, click }) => {
     return (
         <li onClick={click}>
-            <Image className={active ? `${s.item} ${s.active}` : s.item} src={media.fileName} width={130} height={80} alt="../img/diva/diva-bg.png" />
+            <Image className={active ? `${s.img} ${s.active}` : s.img} src={media.fileName} width={130} height={80} alt={media.fileName} />
         </li>
     )
 }

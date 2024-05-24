@@ -3,13 +3,12 @@
 import { FC, useState } from "react";
 import ProjectMediaSlider from "../project_media_slider/project_media_slider";
 import ProjectMediaList from "../project_media_list/project_media_list";
-import { IProject } from "@/app/interfaces/projects.interface";
-
-import s from './project_media.module.scss'
-import LinkArrow from "../link_arrow/link_arrow";
 import TextArrow from "../text_arrow/text_arrow";
+import { IProject } from "@/app/interfaces/projects.interface";
 import { projects } from "@/app/constants/projects";
 import { useRouter } from "next/navigation";
+
+import s from './project_media.module.scss'
 
 interface ProjectMediaProps {
     project: IProject
@@ -47,7 +46,7 @@ const ProjectMedia: FC<ProjectMediaProps> = ({ project }) => {
     return (
         <div>
             <div className={s.wrap}>
-                <ProjectMediaSlider className={s.slider} media={project.media[activeMediaIndex]} prev={handlePrevClick} next={handleNextClick} />
+                <ProjectMediaSlider className={s.slider} media={project.media[activeMediaIndex]} activeMediaIndex={activeMediaIndex} mediaMaxIndex={project.media.length} prev={handlePrevClick} next={handleNextClick} />
                 <ProjectMediaList media={project.media} activeIndex={activeMediaIndex} click={handleClickList} />
             </div>
             <div className={s.next}>

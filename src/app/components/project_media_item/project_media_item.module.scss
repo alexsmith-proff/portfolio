@@ -1,6 +1,7 @@
 @import '../../variables.scss';
 
-.item {
+.img {
+    background: linear-gradient(var(--angle), $light-color, $bright-color1);
     border-radius: 10px;
     margin-bottom: 10px;
 
