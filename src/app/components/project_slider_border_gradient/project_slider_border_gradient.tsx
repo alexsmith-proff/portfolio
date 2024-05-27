@@ -15,11 +15,12 @@ interface ProjectSliderBorderGradientProps {
     activeMediaIndex: number
     mediaMaxIndex: number
     alt?: string
+    click: () => void
     prev: () => void
     next: () => void
 }
 
-const ProjectSliderBorderGradient: FC<ProjectSliderBorderGradientProps> = ({ width, height, borderWidth, media, activeMediaIndex, mediaMaxIndex, alt = 'photo', prev, next }) => {
+const ProjectSliderBorderGradient: FC<ProjectSliderBorderGradientProps> = ({ width, height, borderWidth, media, activeMediaIndex, mediaMaxIndex, alt = 'photo', click, prev, next }) => {
     // Размер фото
     const [widthPhoto, setWidthPhoto] = useState(600)
     const [heightPhoto, setHeightPhoto] = useState(500)
@@ -57,7 +58,11 @@ const ProjectSliderBorderGradient: FC<ProjectSliderBorderGradientProps> = ({ wid
 
     return (
         <div className={s.slider}>
-            <div className={s.item} style={{ width: Number(widthPhoto) + 1.2 * borderWidth, height: Number(heightPhoto) + 1.2 * borderWidth, objectFit: "cover" }}>
+            <div
+                className={s.item}
+                style={{ width: Number(widthPhoto) + 1.2 * borderWidth, height: Number(heightPhoto) + 1.2 * borderWidth, objectFit: "cover" }}
+                onClick={click}
+            >
                 <div style={{ position: "relative", width: widthPhoto, height: heightPhoto }}>
                     <Image
                         className={s.img}
@@ -71,12 +76,12 @@ const ProjectSliderBorderGradient: FC<ProjectSliderBorderGradientProps> = ({ wid
             </div>
             {
                 media.type === 'image' ? (
-                    <div className={s.icon}>
+                    <div className={s.icon} onClick={click}>
                         <svg stroke={constants.colors.BRIGHT_COLOR1} fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height={`${sizeIcon}px`} width={`${sizeIcon}px`} xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
                     </div>
                 )
                     : (
-                        <div className={s.icon}>
+                        <div className={s.icon} onClick={click}>
                             <svg stroke={constants.colors.BRIGHT_COLOR1} fill={constants.colors.BRIGHT_COLOR1} stroke-width="0" viewBox="0 0 1024 1024" height={`${sizeIcon}px`} width={`${sizeIcon}px`} xmlns="http://www.w3.org/2000/svg"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M719.4 499.1l-296.1-215A15.9 15.9 0 0 0 398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 0 0 0-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"></path></svg>
                         </div>
                     )

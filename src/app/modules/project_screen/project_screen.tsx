@@ -4,6 +4,8 @@ import ProjectMedia from "@/app/components/project_media/project_media";
 import ProjectText from "@/app/components/project_text/project_text";
 
 import s from './project_screen.module.scss'
+import ImagesViewer from "@/app/components/images_viewer/images_viewer";
+import ImagesPopup from "@/app/components/images_popup/images_popup";
 
 interface ProjectScreenProps {
     project: IProject
