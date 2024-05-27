@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .popup {
     width: 100vw;
     height: 100vh;
@@ -14,6 +16,7 @@
     pointer-events: none;
     transition: 0.5s;
 }
+
 .popup.active {
     opacity: 1;
     // pointer-events = all  - чтобы модальное окно было кликабельным
@@ -33,6 +36,7 @@
     transform: scale(0.5);
     transition: 0.2s;
 }
+
 .content.active {
     transform: scale(1);
 }
@@ -47,12 +51,14 @@
     padding-left: 10px;
     padding-right: 10px;
     cursor: pointer;
+
     img {
         max-width: 100%;
         max-height: 100%;
         object-fit: cover;
     }
 }
+
 .popupSmallPhotoList {
     display: flex;
     flex-wrap: wrap;
@@ -64,22 +70,29 @@
     margin-bottom: 15px;
     border-radius: 10px;
     cursor: pointer;
-    & span{
+
+    & span {
         transition: .3s;
     }
+
     transition: .5s;
-    
+
     img {
         width: 80px;
         height: 80px;
-        
+        border: 3px solid transparent;
     }
-    & span:hover{
+
+    & span:hover {
         transform: scale(1.07);
-        
+
         // border-radius: 10px;
     }
-    
+
+    &.active img {
+        border: 3px solid $bright-color2;
+    }
+
 }
 
 .closeBtn {
@@ -97,6 +110,7 @@
     z-index: 999;
     border-radius: 5px;
     cursor: pointer;
+
     &:hover {
         color: #000;
         background-color: rgb(204, 203, 203);

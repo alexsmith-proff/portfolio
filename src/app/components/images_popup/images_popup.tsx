@@ -38,7 +38,7 @@ const ImagesPopup: FC<ImagesPopupProps> = ({ activePopup, photos, currentPhotoNu
                             <div className={s.popupSmallPhotoList}>
                                 {
                                     photos.map((item, index) => (
-                                        <div className={s.popupSmallPhoto} key={index}>
+                                        <div className={currentPhotoNum == index ? `${s.popupSmallPhoto} ${s.active}` : s.popupSmallPhoto} key={index}>
                                             <Image
                                                 className={s.popupSmallPhoto}
                                                 alt="small-photo"
