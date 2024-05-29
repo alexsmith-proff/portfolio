@@ -8,7 +8,6 @@ export default function ProjectPage({ params }) {
     <main>
       <ProjectScreen project={projects.find(item => item.id == params.id)} />
       <MainProjects title="Другие проекты" />
-      
     </main>
   );
 }

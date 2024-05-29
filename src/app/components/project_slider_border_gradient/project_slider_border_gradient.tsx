@@ -4,6 +4,7 @@ import { FC, useEffect, useState } from "react";
 import Image from "next/image";
 import { constants } from "@/app/constants";
 import { IMedia } from "@/app/interfaces/projects.interface";
+import { useResizeImage } from "@/app/hooks/useResizeImage";
 
 import s from './project_slider_border_gradient.module.scss'
 
@@ -27,35 +28,27 @@ const ProjectSliderBorderGradient: FC<ProjectSliderBorderGradientProps> = ({ wid
     const [sizeArrow, setSizeArrow] = useState(30)
     const [sizeIcon, setSizeIcon] = useState(50)
 
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.screen.width >= 640) {
-                setWidthPhoto(600)
-                setHeightPhoto(500)
-            }
-            if (window.screen.width < 640) {
-                setWidthPhoto(500)
-                setHeightPhoto(400)
-                setSizeIcon(40)
-            }
-            if (window.screen.width < 530) {
-                setWidthPhoto(400)
-                setHeightPhoto(300)
-            }
-            if (window.screen.width < 430) {
-                setWidthPhoto(270)
-                setHeightPhoto(200)
-                setSizeArrow(25)
-                setSizeIcon(30)
-            }
-        };
-        window.addEventListener('resize', handleResize);
-        handleResize()
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, [])
-
+    useResizeImage(() => {
+        if (window.screen.width >= 640) {
+            setWidthPhoto(600)
+            setHeightPhoto(500)
+        }
+        if (window.screen.width < 640) {
+            setWidthPhoto(500)
+            setHeightPhoto(400)
+            setSizeIcon(40)
+        }
+        if (window.screen.width < 530) {
+            setWidthPhoto(400)
+            setHeightPhoto(300)
+        }
+        if (window.screen.width < 430) {
+            setWidthPhoto(270)
+            setHeightPhoto(200)
+            setSizeArrow(25)
+            setSizeIcon(30)
+        }        
+    })
     return (
         <div className={s.slider}>
             <div
