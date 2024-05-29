@@ -4,12 +4,12 @@ import { FC, useEffect, useState } from "react";
 import ProjectMediaSlider from "../project_media_slider/project_media_slider";
 import ProjectMediaList from "../project_media_list/project_media_list";
 import TextArrow from "../text_arrow/text_arrow";
-import { IProject } from "@/app/interfaces/projects.interface";
+import ImagesPopup from "../images_popup/images_popup";
 import { projects } from "@/app/constants/projects";
 import { useRouter } from "next/navigation";
+import { IProject } from "@/app/interfaces/projects.interface";
 
 import s from './project_media.module.scss'
-import ImagesPopup from "../images_popup/images_popup";
 
 interface ProjectMediaProps {
     project: IProject
@@ -26,7 +26,7 @@ const ProjectMedia: FC<ProjectMediaProps> = ({ project }) => {
         }
     }
     const handleNextClick = () => {
-        if (activeMediaIndex !== project.media.length - 1) {
+        if (activeMediaIndex !== project.media.main.length - 1) {
             setActiveMediaIndex(prev => prev + 1)
         }
     }
@@ -50,7 +50,7 @@ const ProjectMedia: FC<ProjectMediaProps> = ({ project }) => {
     }
 
     const handleClickNextPhoto = () => {
-        setActiveMediaIndex((prev) => prev < project.media.length - 1 ? prev + 1 : 0)
+        setActiveMediaIndex((prev) => prev < project.media.main.length - 1 ? prev + 1 : 0)
     }
 
     const handleClickThumbnailPhoto = (ind: number) => {
@@ -72,21 +72,21 @@ const ProjectMedia: FC<ProjectMediaProps> = ({ project }) => {
     return (
         <div className={s.item}>
             <div className={s.wrap}>
-                <ProjectMediaSlider className={s.slider} media={project.media[activeMediaIndex]} activeMediaIndex={activeMediaIndex} mediaMaxIndex={project.media.length} click={handleClick} prev={handlePrevClick} next={handleNextClick} />
-                <ProjectMediaList media={project.media} activeIndex={activeMediaIndex} click={handleClickList} />
+                <ProjectMediaSlider className={s.slider} media={project.media.previews[activeMediaIndex]} activeMediaIndex={activeMediaIndex} mediaMaxIndex={project.media.previews.length} click={handleClick} prev={handlePrevClick} next={handleNextClick} />
+                <ProjectMediaList media={project.media.previews} activeIndex={activeMediaIndex} click={handleClickList} />
             </div>
             <div className={s.next}>
                 <TextArrow text="Следующий проект" click={handleClickNextProject} />
             </div>
             <ImagesPopup
                 activePopup={activePopup}
-                photos={project.media.map(item => item.fileName)}
+                mainMedia={project.media.main[activeMediaIndex]}
+                previewMedia={project.media.previews}
                 currentPhotoNum={activeMediaIndex}
                 clickNextPhoto={handleClickNextPhoto}
                 clickThumbnailPhoto={handleClickThumbnailPhoto}
                 closePopup={handleClosePopup}
             />
-            {/* <ImagesViewer photos={project.media.map(item => item.fileName)} mainPhotoNum={0} widthContent={440} widthSmallPhoto={60} heightSmallPhoto={60} gapSmallPhoto={5} /> */}
         </div>
     )
 }

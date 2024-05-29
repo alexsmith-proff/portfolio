@@ -61,14 +61,17 @@
 
 .popupSmallPhotoList {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     padding: 10px;
+    overflow-x: auto;
+    width: 100%;
 }
 
 .popupSmallPhoto {
-    margin-right: 15px;
+    margin-right: 10px;
     margin-bottom: 15px;
     border-radius: 10px;
+    position: relative;
     cursor: pointer;
 
     & span {
@@ -78,7 +81,7 @@
     transition: .5s;
 
     img {
-        width: 80px;
+        width: 120px;
         height: 80px;
         border: 3px solid transparent;
     }
@@ -93,6 +96,19 @@
         border: 3px solid $bright-color2;
     }
 
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 }
 
 .closeBtn {
@@ -136,3 +152,22 @@
         right: 10px;
     }
 }
+
+@media screen and (max-width: 414px) {
+    .popupSmallPhoto {
+        margin-right: 5px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        img {
+            width: 80px;
+            height: 60px;
+            border: 3px solid transparent;
+        }
+        &.active img {
+            border: 3px solid $bright-color2;
+        }
+    }
+}
+
+
+

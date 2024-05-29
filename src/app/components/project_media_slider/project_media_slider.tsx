@@ -27,7 +27,8 @@ const ProjectMediaSlider: FC<ProjectMediaSliderProps> = ({ media, activeMediaInd
                 alt={media.fileName}
                 click={click}
                 prev={prev}
-                next={next} />
+                next={next}
+            />
         </div>
     )
 }
