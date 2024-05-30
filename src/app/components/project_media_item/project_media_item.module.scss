@@ -4,6 +4,7 @@
     background: linear-gradient(var(--angle), $light-color, $bright-color1);
     border-radius: 10px;
     margin-bottom: 10px;
+    border: 2px solid $light-color;
 
     &.active {
         border: 3px solid $bright-color2;

@@ -1,3 +1,5 @@
+// !!! ВНИМАНИЕ !!! id и serialNumber в проекте должны совпадать. id и serialNumber в массиве должны идти по порядку
+
 import { IProject, IProjectCard } from "../interfaces/projects.interface";
 
 export const projects: IProject[] = [
@@ -6,7 +8,7 @@ export const projects: IProject[] = [
         serialNumber: 1,
         title: 'Интернет магазин продажи цветов',
         description: 'Интернет магазин продажи цветов. В данном проекте реализована регистрация, авторизация пользователей, просмотр товаров, фильтрация товаров, корзина. Имеется админ панель, которая позволяет создавать контент: разделы меню, посты для CEO, товары с описанием и медиа информацией ',
-        stackExpand: 'NestJS, TypeScript, PostgreSQL, GraphQL, Apollo, Next.js, Redux Toolkit, Formik Axios, Jest, React Testing Library, Docker',
+        stackExpand: 'Nest.js, TypeScript, PostgreSQL, GraphQL, Apollo, Next.js, Redux Toolkit, Formik Axios, Jest, React Testing Library, Docker',
         gitUrl: 'https://github.com/alexsmith-proff/marketplace_of_flowers',
         media: 
         {
@@ -248,7 +250,7 @@ export const projects: IProject[] = [
         serialNumber: 3,
         title: 'Внутренний проект - Тестирование знаний по охране труда',
         description: 'Просто описание про Внутренний проект - Тестирование знаний по охране труда',
-        stackExpand: 'Express Next.js Redux MongoDB',
+        stackExpand: 'Express.js Next.js Redux MongoDB',
         media: {
             main: [
                 {
@@ -366,7 +368,7 @@ export const projects: IProject[] = [
         serialNumber: 5,
         title: 'Сайт агентства недвижимости',
         description: 'Просто описание про ДИВА недвижимость',
-        stackExpand: 'Express Next.js',
+        stackExpand: 'Express.js Next.js',
         media: {
             main: [
                 {
@@ -437,7 +439,7 @@ export const projects: IProject[] = [
         serialNumber: 6,
         title: 'Интернет магазин продажи строительных материалов',
         description: 'Просто описание про Интернет магазин продажи строительных материалов',
-        stackExpand: 'Express React',
+        stackExpand: 'Express.js React.js',
         media: {
             main: [
                 {
@@ -470,7 +472,7 @@ export const projectCards: IProjectCard[] = [
         id: 1,
         serialNumber: 1,
         title: 'Интернет магазин цветов',
-        stackShort: `NestJS Next.js PostgreSQL`,
+        stackShort: `Nest.js Next.js PostgreSQL`,
         bgFileName: '../img/marketplace_of_flowers/marketplace_of_flowers-bg.png'
     },
     {
@@ -484,8 +486,8 @@ export const projectCards: IProjectCard[] = [
         id: 3,
         serialNumber: 3,
         title: 'Тестирование по охране труда',
-        stackShort: `Express Next.js MongoDB`,
-        bgFileName: '../img/safety_and_health/safety_and_health-video.gif'
+        stackShort: `Express.js Next.js MongoDB`,
+        bgFileName: '../img/safety_and_health/safety_and_health-bg.png'
     },
     {
         id: 4,
@@ -497,15 +499,15 @@ export const projectCards: IProjectCard[] = [
     {
         id: 5,
         serialNumber: 5,
-        title: 'Сайт агентства недвижимостий',
-        stackShort: `Express Next.js`,
+        title: 'Сайт агентства недвижимости',
+        stackShort: `Express.js Next.js`,
         bgFileName: '../img/diva/diva-bg.png'
     },
     {
         id: 6,
         serialNumber: 6,
         title: 'Интернет магазин строительных материалов',
-        stackShort: `Express React`,
+        stackShort: `Express.js React.js`,
         bgFileName: '../img/magazin-stroy-master/magazin-stroy-master-bg.png'
     },
 ]

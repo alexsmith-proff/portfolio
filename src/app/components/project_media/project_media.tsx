@@ -39,7 +39,10 @@ const ProjectMedia: FC<ProjectMediaProps> = ({ project }) => {
     const handleClickNextProject = () => {
         const a = projects.find(item => item.serialNumber === project.serialNumber + 1)?.id
         if (project.serialNumber !== projects.length) {
-            router.push(`/project/${projects.find(item => item.serialNumber === project.serialNumber + 1)?.id}`)
+            const id = projects.find(item => item.serialNumber === project.serialNumber + 1)?.id
+            if (id) {
+                router.push(`/project/${projects.find(item => item.serialNumber === project.serialNumber + 1)?.id}`)
+            }
         } else {
             router.push(`/project/${projects.find(item => item.serialNumber === 1)?.id}`)
         }
