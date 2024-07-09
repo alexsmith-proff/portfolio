@@ -3,13 +3,14 @@ import Image from "next/image";
 import Ticker from "@/app/components/ticker/ticker";
 
 import s from './about_screen.module.scss'
+import LinkArrow from "@/app/components/link_arrow/link_arrow";
 
 const AboutScreen: FC = ({ }) => {
     return (
         <div className={s.main}>
             <div className="container">
                 <div className={s.content}>
-                    <div className={s.text}>Lorem ipsum dolor sit amet adipisicing elit. Ut suscipit aliquid voluptate laudantium, aspernatur culpa provident ad at quisquam nemo ratione quas temporibus quia, optio beatae delectus libero magnam ducimus est dignissimos labore? Dolorum nesciunt ex, aut quam laborum iure temporibus aliquam fuga itaque! Necessitatibus alias facere odio illum suscipit aspernatur officiis maiores culpa quis sequi. Distinctio voluptatibus nemo, quo explicabo quasi exercitationem minus rerum tempore debitis animi. Eum deserunt esse modi repellendus nostrum numquam ad perferendis quod expedita fuga?</div>
+                    <div className={s.text}>Привет! Я Алексей, мне 39 лет. Живу в г. Пенза. В 2006 году окончил Пензенский Государственный Университет по специальности &quot;Роботы и робототехнические системы и комплексы&quot;. После окончания универа, я работал в области электроники 15 лет и получил опыт разработки электронной аппаратуры. Так же в течении этого времени я параллельно занимался разработкой ПО - программирование микроконтроллеров (Embedded) на языке Си, разрабатывал desktop приложения на Object Pascal (Delphi). С 2009 года работаю в компании <LinkArrow text="КБ ПУЛЬСАР-ТЕЛЕКОМ" url="https://www.pulsar-telecom.ru/" isArrowEnable={false} isBlankEnable={true} />. Компания занимается разработкой и производством телекоммуникационного оборудования. В данной компании я работаю в WEB направлении, являюсь FRONTEND разработчиком. FRONTEND разрабатываю на React.js. Так же есть опыт разработки BACKEND. В BACKEND я использую Node.js. Данное веб приложение я разработал на Next.js. Все мои проекты можно посмотреть <LinkArrow text="здесь" url="/project/1"  /> </div>
                     <ul className={s.photoList}>
                         <li className={`${s.photoItem} ${s.photo1}`}>
                             <Image className={s.img} src={'/img/about/1.png'} width={405} height={400} alt="about-photo1" />

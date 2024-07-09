@@ -7,8 +7,8 @@ export const projects: IProject[] = [
         id: 1,
         serialNumber: 1,
         title: 'Интернет магазин продажи цветов',
-        description: 'Интернет магазин продажи цветов. В данном проекте реализована регистрация, авторизация пользователей, просмотр товаров, фильтрация товаров, корзина. Имеется админ панель, которая позволяет создавать контент: разделы меню, посты для CEO, товары с описанием и медиа информацией ',
-        stackExpand: 'Nest.js, TypeScript, PostgreSQL, GraphQL, Apollo, Next.js, Redux Toolkit, Formik Axios, Jest, React Testing Library, Docker',
+        description: 'Интернет магазин продажи цветов. В данном проекте реализована регистрация, авторизация пользователей, просмотр товаров, фильтрация товаров, корзина. Имеется админ панель, которая позволяет создавать контент: разделы меню, посты для CEO, товары с описанием и медиа информацией. Данный проект я разрабатывал один - BACKEND/FRONTEND',
+        stackExpand: 'Nest.js, TypeScript, PostgreSQL, GraphQL, Apollo, Next.js, Redux Toolkit, Formik, Axios, Jest, React Testing Library, Docker',
         gitUrl: 'https://github.com/alexsmith-proff/marketplace_of_flowers',
         media: 
         {
@@ -138,8 +138,8 @@ export const projects: IProject[] = [
         id: 2,
         serialNumber: 2,
         title: 'Коммутатор IP телефонии',
-        description: 'Просто описание про Коммутатор IP телефонии',
-        stackExpand: 'React.js WebSocket MobX',
+        description: 'Данное приложение обеспечивает функционал телефонистки работающей на коммутаторе для ведомственных сетей. В данном проекте реализована регистрация/авторизация, основной механиз работы соединения абонентов, справочник отображающий более 50000 абонентов, история заказов, тарифы, прослушивание записанных разговоров, журнал событий и т.д. В данном проекте я разрабатывал FRONTEND ',
+        stackExpand: 'Python React.js WebSocket MobX ReactIcons StoryBook',
         media: {
             main: [
                 {
@@ -249,8 +249,9 @@ export const projects: IProject[] = [
         id: 3,
         serialNumber: 3,
         title: 'Внутренний проект - Тестирование знаний по охране труда',
-        description: 'Просто описание про Внутренний проект - Тестирование знаний по охране труда',
+        description: 'Внутренний проект ПУЛЬСАР-ТЕЛЕКОМ. Проект позволяет проверить знания сотрудников по охране труда и провести другие тесты. В данном проекте реализована регистрация, авторизация пользователей, Имеется админ панель, которая позволяет создавать тесты, просматривать результаты тестирования сутрудников. Данный проект я разрабатывал один - BACKEND/FRONTEND',
         stackExpand: 'Express.js Next.js Redux MongoDB',
+        gitUrl: 'https://github.com/alexsmith-proff/safety_and_health',
         media: {
             main: [
                 {
@@ -308,67 +309,68 @@ export const projects: IProject[] = [
             ]
         }
     },
+    // {
+    //     id: 4,
+    //     serialNumber: 4,
+    //     title: 'КИПР - Комплекс Измерения Параметров Радиостанций',
+    //     description: 'Просто описание про КИПР - Комплекс Измерения Параметров Радиостанций',
+    //     stackExpand: 'React MobX MUI GraphQL',
+    //     media: {
+    //         main: [
+    //             {
+    //                 fileName: '/img/kipr/kipr1.png',
+    //                 type: "image"
+    //             },
+    //             {
+    //                 fileName: '/img/kipr/kipr2.png',
+    //                 type: "image"
+    //             },
+    //             {
+    //                 fileName: '/img/kipr/kipr3.png',
+    //                 type: "image"
+    //             },
+    //             {
+    //                 fileName: '/img/kipr/kipr4.png',
+    //                 type: "image"
+    //             },
+                
+    //             {
+    //                 fileName: '/img/kipr/kipr-video.mp4',
+    //                 type: "video"
+    //             },
+    //         ],
+    //         previews: [
+    //             {
+    //                 fileName: '/img/kipr/kipr1.png',
+    //                 type: "image"
+    //             },
+    //             {
+    //                 fileName: '/img/kipr/kipr2.png',
+    //                 type: "image"
+    //             },
+    //             {
+    //                 fileName: '/img/kipr/kipr3.png',
+    //                 type: "image"
+    //             },
+    //             {
+    //                 fileName: '/img/kipr/kipr4.png',
+    //                 type: "image"
+    //             },
+                
+    //             {
+    //                 fileName: '/img/kipr/kipr-video.gif',
+    //                 type: "video"
+    //             },
+    //         ]
+    //     }
+    // },
     {
         id: 4,
         serialNumber: 4,
-        title: 'КИПР - Комплекс Измерения Параметров Радиостанций',
-        description: 'Просто описание про КИПР - Комплекс Измерения Параметров Радиостанций',
-        stackExpand: 'React MobX MUI GraphQL',
-        media: {
-            main: [
-                {
-                    fileName: '/img/kipr/kipr1.png',
-                    type: "image"
-                },
-                {
-                    fileName: '/img/kipr/kipr2.png',
-                    type: "image"
-                },
-                {
-                    fileName: '/img/kipr/kipr3.png',
-                    type: "image"
-                },
-                {
-                    fileName: '/img/kipr/kipr4.png',
-                    type: "image"
-                },
-                
-                {
-                    fileName: '/img/kipr/kipr-video.mp4',
-                    type: "video"
-                },
-            ],
-            previews: [
-                {
-                    fileName: '/img/kipr/kipr1.png',
-                    type: "image"
-                },
-                {
-                    fileName: '/img/kipr/kipr2.png',
-                    type: "image"
-                },
-                {
-                    fileName: '/img/kipr/kipr3.png',
-                    type: "image"
-                },
-                {
-                    fileName: '/img/kipr/kipr4.png',
-                    type: "image"
-                },
-                
-                {
-                    fileName: '/img/kipr/kipr-video.gif',
-                    type: "video"
-                },
-            ]
-        }
-    },
-    {
-        id: 5,
-        serialNumber: 5,
         title: 'Сайт агентства недвижимости',
-        description: 'Просто описание про ДИВА недвижимость',
+        description: 'Сайт агентства "ДИВА-недвижимость". Проект демонстрирует оъекты недвижимости. Имеются две секции - ареда, продажа. Так же проект позволяет оставлять заявки, которые приходят на email. Данный проект я разрабатывал один - BACKEND/FRONTEND',
         stackExpand: 'Express.js Next.js',
+        gitUrl: 'https://github.com/alexsmith-proff/DIVA',
         media: {
             main: [
                 {
@@ -435,11 +437,12 @@ export const projects: IProject[] = [
         }
     },
     {
-        id: 6,
-        serialNumber: 6,
+        id: 5,
+        serialNumber: 5,
         title: 'Интернет магазин продажи строительных материалов',
-        description: 'Просто описание про Интернет магазин продажи строительных материалов',
-        stackExpand: 'Express.js React.js',
+        description: 'Интернет магазин продажи строительных материалов. В данном проекте реализована регистрация, авторизация пользователей, просмотр товаров, корзина. Данный проект я разрабатывал один - BACKEND/FRONTEND',
+        stackExpand: 'Express.js MongoDB React.js Redux Axios',
+        gitUrl: 'https://github.com/alexsmith-proff/magazin-stroy',
         media: {
             main: [
                 {
@@ -489,23 +492,23 @@ export const projectCards: IProjectCard[] = [
         stackShort: `Express.js Next.js MongoDB`,
         bgFileName: '../img/safety_and_health/safety_and_health-bg.png'
     },
+    // {
+    //     id: 4,
+    //     serialNumber: 4,
+    //     title: 'КИПР - Комплекс Измерения Параметров Радиостанций',
+    //     stackShort: `React MobX MUI GraphQL`,
+    //     bgFileName: '../img/kipr/kipr-bg.png'
+    // },
     {
         id: 4,
         serialNumber: 4,
-        title: 'КИПР - Комплекс Измерения Параметров Радиостанций',
-        stackShort: `React MobX MUI GraphQL`,
-        bgFileName: '../img/kipr/kipr-bg.png'
-    },
-    {
-        id: 5,
-        serialNumber: 5,
         title: 'Сайт агентства недвижимости',
         stackShort: `Express.js Next.js`,
         bgFileName: '../img/diva/diva-bg.png'
     },
     {
-        id: 6,
-        serialNumber: 6,
+        id: 5,
+        serialNumber: 5,
         title: 'Интернет магазин строительных материалов',
         stackShort: `Express.js React.js`,
         bgFileName: '../img/magazin-stroy-master/magazin-stroy-master-bg.png'

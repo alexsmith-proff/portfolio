@@ -10,16 +10,20 @@ interface LinkArrowProps {
     text?: string
     textFontSize?: number
     color?: string
+    isBlankEnable?: boolean
+    isArrowEnable?: boolean
     arrowSize?: number
     arrowGap?: number
 }
 
-const LinkArrow: FC<LinkArrowProps> = ({ url, text, textFontSize, color = constants.colors.BRIGHT_COLOR1, arrowSize = 18, arrowGap = 5 }) => {
+const LinkArrow: FC<LinkArrowProps> = ({ url, text, textFontSize, color = constants.colors.BRIGHT_COLOR1, isBlankEnable = false, isArrowEnable = true, arrowSize = 18, arrowGap = 5 }) => {
     return (
         <span style={{color, fontSize: textFontSize}}>
-            <Link className={s.link} href={url}>
+            <Link className={s.link} href={url} target={isBlankEnable ? '_blank' : '_self'}>
                 {text}
-                <FaArrowRightLong className={s.linkIco} style={{marginLeft: arrowGap}} size={arrowSize} />
+                {
+                    isArrowEnable && <FaArrowRightLong className={s.linkIco} style={{marginLeft: arrowGap}} size={arrowSize} />
+                }
             </Link>
         </span>
     )

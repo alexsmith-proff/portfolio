@@ -1,0 +1,37 @@
+@import '../../variables.scss';
+
+.footer {
+    padding: 30px 0px;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    color: $bright-color1;
+}
+
+.ico{
+    margin-right: 7px;
+}
+
+.item {
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 550px) {
+    .wrap {
+        flex-direction: column;
+    }
+    .text{
+        margin-bottom: 20px;
+    }
+    .item {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+}
