@@ -60,6 +60,14 @@
     }
 }
 
+.loading{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    // transform: translate(-50%, -50%)!important;
+}
+
 @keyframes rotate {
     to {
         --angle: 360deg;

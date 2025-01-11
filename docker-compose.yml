@@ -1,9 +1,59 @@
 version: "3"
 
 services:
-  frontend: 
+  # Next.js Service
+  nextjs: 
     build: 
       context: ./
       dockerfile: Dockerfile
+    container_name: nextjs-c  
     ports:
-      - 80:3000
+      - "3000:3000"
+    restart: unless-stopped
+    networks:
+      - app-network 
+
+  # Nginx Service
+  webserver:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: nginx-c
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: unless-stopped
+    volumes:
+      - web-root:/var/www/html
+      - certbot-etc:/etc/letsencrypt
+      - certbot-var:/var/lib/letsencrypt
+    depends_on:
+      - nextjs
+    networks:
+      - app-network
+
+  certbot:
+    image: certbot/dns-cloudflare
+    volumes:
+      - certbot-etc:/etc/letsencrypt
+      - ./cloudflare.ini:/root/cloudflare.ini
+    command: >-
+      certonly --dns-cloudflare
+      --dns-cloudflare-credentials /root/cloudflare.ini
+      --dns-cloudflare-propagation-seconds 15
+      --email alex_kuz84@mail.ru
+      --agree-tos --no-eff-email
+      --force-renewal
+      -d kuznetsov-portfolio.ru
+    networks:
+      - app-network  
+
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  certbot-etc:
+  certbot-var:
+  web-root:

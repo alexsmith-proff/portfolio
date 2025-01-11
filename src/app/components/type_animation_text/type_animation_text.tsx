@@ -27,11 +27,11 @@ const TypeAnimationText: FC<TypeAnimationTextProps> = ({ }) => {
             <TypeAnimation
                 sequence={[
                     'Frontend',
-                    7000,
+                    4000,
                     ' ',
                     () => setColor(constants.colors.BRIGHT_COLOR2),
                     'Backend',
-                    5000,
+                    4000,
                     ' ',
                     () => setColor(constants.colors.BRIGHT_COLOR1),
                 ]}

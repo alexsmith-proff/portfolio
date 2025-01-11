@@ -2,16 +2,16 @@
     // height: calc(100vh - 110px);
 }
 .projectsCardList{
-    padding-top: 120px;
+    padding-top: 40px;
 }
 
 @media screen and (max-width: 989px) {
     .projectsCardList{
-        padding-top: 100px;
+        padding-top: 40px;
     }
 }
 @media screen and (max-width: 619px) {
     .projectsCardList{
-        padding-top: 30px;
+        padding-top: 10px;
     }
 }

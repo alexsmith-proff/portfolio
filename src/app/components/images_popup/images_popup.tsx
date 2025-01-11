@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import Image from "next/image";
 import { Grad, toBase64 } from "@/app/services/image";
 import { useResizeImage } from "@/app/hooks/useResizeImage";
@@ -8,6 +8,7 @@ import { IMedia } from "@/app/interfaces/projects.interface";
 
 import s from './images_popup.module.scss'
 import { constants } from "@/app/constants";
+import SpinnerLds from "../spinners/spinner_lds/spiner_lds";
 
 interface ImagesPopupProps {
     activePopup: boolean
@@ -26,6 +27,12 @@ const ImagesPopup: FC<ImagesPopupProps> = ({ activePopup, mainMedia, previewMedi
 
     const [widthSmallPhoto, setWidthSmallPhoto] = useState(120)
     const [heightSmallPhoto, setHeightSmallPhoto] = useState(120)
+
+    const [isLoadingImage, setIsLoadingImage] = useState<boolean>(true)
+
+    const handleLoadImage = () => {
+        setIsLoadingImage(false)
+    }
 
     useResizeImage(() => {
         if (window.screen.width >= 1620) {
@@ -79,6 +86,10 @@ const ImagesPopup: FC<ImagesPopupProps> = ({ activePopup, mainMedia, previewMedi
         }
     })
 
+    useEffect(() => {
+        setIsLoadingImage(true)
+    }, [currentPhotoNum])
+
     return (
         <div>
             {
@@ -97,6 +108,7 @@ const ImagesPopup: FC<ImagesPopupProps> = ({ activePopup, mainMedia, previewMedi
                                             placeholder="blur"
                                             blurDataURL={`data:image/svg+xml;base64,${toBase64(Grad(600, 700))}`}
                                             objectFit="cover"
+                                            onLoad={handleLoadImage}
                                             onClick={clickNextPhoto}
                                         />
                                     ) : (
@@ -104,13 +116,16 @@ const ImagesPopup: FC<ImagesPopupProps> = ({ activePopup, mainMedia, previewMedi
                                             src={mainMedia.fileName}
                                             width={widthBigPhoto}
                                             height={heightBigPhoto}
+                                            onCanPlayThrough={handleLoadImage}
                                             onClick={clickNextPhoto}
                                             loop
                                             autoPlay
                                         />
                                     )
                                 }
-
+                                {
+                                    isLoadingImage && <SpinnerLds className={s.loading} scale={0.5} />
+                                }
                             </div>
                             <div className={s.popupSmallPhotoList}>
                                 {

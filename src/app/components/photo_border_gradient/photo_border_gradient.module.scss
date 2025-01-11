@@ -7,7 +7,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 40px;
+    position: relative;
     animation: 5s rotate linear infinite;
+}
+
+.loading {
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    left: calc(50% - 30px);
+    top: calc(50% + -40px);
+    // transform: translate(-50%, -50%)!important;
 }
 
 .img {

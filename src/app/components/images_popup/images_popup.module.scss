@@ -50,6 +50,7 @@
     margin-bottom: 0px;
     padding-left: 10px;
     padding-right: 10px;
+    position: relative;
     cursor: pointer;
 
     img {
@@ -57,6 +58,16 @@
         max-height: 100%;
         object-fit: cover;
     }
+}
+
+.loading{
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+    // transform: translate(-50%, -50%) !important;
+    // top: 0;
+    // left: 0;
+    z-index: 999;
 }
 
 .popupSmallPhotoList {

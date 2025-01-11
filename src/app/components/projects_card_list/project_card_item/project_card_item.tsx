@@ -14,7 +14,7 @@ const ProjectCardItem: FC<ProjectCardItemProps> = ({ project, click }) => {
         click()
     }
     return (
-        <ProjectCardItemUI id={project.id} title={project.title} stackShort={project.stackShort} bgFileName={project.bgFileName} click={handleClick} />
+        <ProjectCardItemUI title={project.title} stackShort={project.stackShort} bgFileName={project.bgFileName} click={handleClick} />
     )
 }
 

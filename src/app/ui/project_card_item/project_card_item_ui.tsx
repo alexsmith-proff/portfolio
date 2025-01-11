@@ -3,14 +3,13 @@ import { FC } from "react";
 import s from './project_card_item_ui.module.scss'
 
 interface ProjectCardItemUIProps{
-    id: number
     title: string
     stackShort: string
     bgFileName: string
     click: () => void
 }
 
-const ProjectCardItemUI: FC<ProjectCardItemUIProps> = ({ id, title, stackShort, bgFileName, click }) => {
+const ProjectCardItemUI: FC<ProjectCardItemUIProps> = ({ title, stackShort, bgFileName, click }) => {
     return (
         <div className={s.item} onClick={click}>
             <div className={s.content} style={{backgroundImage: `url(${bgFileName})`}}>

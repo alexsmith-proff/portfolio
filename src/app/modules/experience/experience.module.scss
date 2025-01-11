@@ -1,0 +1,17 @@
+.section{
+    // height: calc(100vh - 110px);
+}
+.list{
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 989px) {
+    .list{
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width: 619px) {
+    .list{
+        padding-top: 10px;
+    }
+}

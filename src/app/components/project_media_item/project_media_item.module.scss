@@ -1,5 +1,16 @@
 @import '../../variables.scss';
 
+.item {
+    position: relative;
+}
+
+.loading {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    // transform: translate(-50%, -50%) !important;
+}
+
 .img {
     background: linear-gradient(var(--angle), $light-color, $bright-color1);
     border-radius: 10px;
@@ -12,7 +23,7 @@
 }
 
 @media screen and (max-width: 790px) {
-    .img{
+    .img {
         margin-right: 10px;
     }
 }
