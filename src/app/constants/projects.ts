@@ -14,119 +14,119 @@ export const projects: IProject[] = [
         {
             main: [
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers1.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers1.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers2.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers2.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers3.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers3.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers4.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers4.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers5.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers5.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers6.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers6.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers7.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers7.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers8.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers8.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers9.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers9.png',
                     type: "image"
                 },
     
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers-video1.mp4',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers-video1.mp4',
                     type: "video"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers-video2.mp4',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers-video2.mp4',
                     type: "video"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers-video3.mp4',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers-video3.mp4',
                     type: "video"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers-video4.mp4',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers-video4.mp4',
                     type: "video"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers-video5.mp4',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers-video5.mp4',
                     type: "video"
                 },
             ],
             previews: [
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers1.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers1.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers2.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers2.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers3.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers3.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers4.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers4.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers5.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers5.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers6.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers6.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers7.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers7.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers8.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers8.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers9.png',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers9.png',
                     type: "image"
                 },
     
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers-video1.gif',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers-video1.gif',
                     type: "video"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers-video2.gif',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers-video2.gif',
                     type: "video"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers-video3.gif',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers-video3.gif',
                     type: "video"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers-video4.gif',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers-video4.gif',
                     type: "video"
                 },
                 {
-                    fileName: './img/marketplace_of_flowers/marketplace_of_flowers-video5.gif',
+                    fileName: '../img/marketplace_of_flowers/marketplace_of_flowers-video5.gif',
                     type: "video"
                 },
             ]
@@ -143,103 +143,103 @@ export const projects: IProject[] = [
         media: {
             main: [
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend1.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend1.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend2.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend2.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend3.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend3.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend4.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend4.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend5.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend5.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend6.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend6.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend7.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend7.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend8.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend8.png',
                     type: "image"
                 },
     
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend-video1.mp4',
+                    fileName: '../img/commutators_frontend/commutators_frontend-video1.mp4',
                     type: "video"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend-video2.mp4',
+                    fileName: '../img/commutators_frontend/commutators_frontend-video2.mp4',
                     type: "video"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend-video3.mp4',
+                    fileName: '../img/commutators_frontend/commutators_frontend-video3.mp4',
                     type: "video"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend-video4.mp4',
+                    fileName: '../img/commutators_frontend/commutators_frontend-video4.mp4',
                     type: "video"
                 },
             ],
             previews: [
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend1.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend1.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend2.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend2.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend3.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend3.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend4.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend4.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend5.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend5.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend6.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend6.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend7.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend7.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend8.png',
+                    fileName: '../img/commutators_frontend/commutators_frontend8.png',
                     type: "image"
                 },
     
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend-video1.gif',
+                    fileName: '../img/commutators_frontend/commutators_frontend-video1.gif',
                     type: "video"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend-video2.gif',
+                    fileName: '../img/commutators_frontend/commutators_frontend-video2.gif',
                     type: "video"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend-video3.gif',
+                    fileName: '../img/commutators_frontend/commutators_frontend-video3.gif',
                     type: "video"
                 },
                 {
-                    fileName: './img/commutators_frontend/commutators_frontend-video4.gif',
+                    fileName: '../img/commutators_frontend/commutators_frontend-video4.gif',
                     type: "video"
                 },
             ]
@@ -255,55 +255,55 @@ export const projects: IProject[] = [
         media: {
             main: [
                 {
-                    fileName: './img/safety_and_health/safety_and_health1.png',
+                    fileName: '../img/safety_and_health/safety_and_health1.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/safety_and_health/safety_and_health2.png',
+                    fileName: '../img/safety_and_health/safety_and_health2.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/safety_and_health/safety_and_health3.png',
+                    fileName: '../img/safety_and_health/safety_and_health3.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/safety_and_health/safety_and_health4.png',
+                    fileName: '../img/safety_and_health/safety_and_health4.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/safety_and_health/safety_and_health5.png',
+                    fileName: '../img/safety_and_health/safety_and_health5.png',
                     type: "image"
                 },
     
                 {
-                    fileName: './img/safety_and_health/safety_and_health-video.mp4',
+                    fileName: '../img/safety_and_health/safety_and_health-video.mp4',
                     type: "video"
                 },
             ],
             previews: [
                 {
-                    fileName: './img/safety_and_health/safety_and_health1.png',
+                    fileName: '../img/safety_and_health/safety_and_health1.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/safety_and_health/safety_and_health2.png',
+                    fileName: '../img/safety_and_health/safety_and_health2.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/safety_and_health/safety_and_health3.png',
+                    fileName: '../img/safety_and_health/safety_and_health3.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/safety_and_health/safety_and_health4.png',
+                    fileName: '../img/safety_and_health/safety_and_health4.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/safety_and_health/safety_and_health5.png',
+                    fileName: '../img/safety_and_health/safety_and_health5.png',
                     type: "image"
                 },
     
                 {
-                    fileName: './img/safety_and_health/safety_and_health-video.gif',
+                    fileName: '../img/safety_and_health/safety_and_health-video.gif',
                     type: "video"
                 },
             ]
@@ -374,63 +374,63 @@ export const projects: IProject[] = [
         media: {
             main: [
                 {
-                    fileName: './img/diva/diva1.png',
+                    fileName: '../img/diva/diva1.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/diva/diva2.png',
+                    fileName: '../img/diva/diva2.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/diva/diva3.png',
+                    fileName: '../img/diva/diva3.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/diva/diva4.png',
+                    fileName: '../img/diva/diva4.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/diva/diva5.png',
+                    fileName: '../img/diva/diva5.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/diva/diva6.png',
+                    fileName: '../img/diva/diva6.png',
                     type: "image"
                 },
     
                 {
-                    fileName: './img/diva/diva-video.mp4',
+                    fileName: '../img/diva/diva-video.mp4',
                     type: "video"
                 },
             ],
             previews: [
                 {
-                    fileName: './img/diva/diva1.png',
+                    fileName: '../img/diva/diva1.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/diva/diva2.png',
+                    fileName: '../img/diva/diva2.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/diva/diva3.png',
+                    fileName: '../img/diva/diva3.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/diva/diva4.png',
+                    fileName: '../img/diva/diva4.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/diva/diva5.png',
+                    fileName: '../img/diva/diva5.png',
                     type: "image"
                 },
                 {
-                    fileName: './img/diva/diva6.png',
+                    fileName: '../img/diva/diva6.png',
                     type: "image"
                 },
     
                 {
-                    fileName: './img/diva/diva-video.gif',
+                    fileName: '../img/diva/diva-video.gif',
                     type: "video"
                 },
             ]
@@ -446,23 +446,23 @@ export const projects: IProject[] = [
         media: {
             main: [
                 {
-                    fileName: './img/magazin-stroy-master/magazin-stroy-master1.png',
+                    fileName: '../img/magazin-stroy-master/magazin-stroy-master1.png',
                     type: "image"
                 },
     
                 {
-                    fileName: './img/magazin-stroy-master/magazin-stroy-master-video.mp4',
+                    fileName: '../img/magazin-stroy-master/magazin-stroy-master-video.mp4',
                     type: "video"
                 },
             ],
             previews: [
                 {
-                    fileName: './img/magazin-stroy-master/magazin-stroy-master1.png',
+                    fileName: '../img/magazin-stroy-master/magazin-stroy-master1.png',
                     type: "image"
                 },
     
                 {
-                    fileName: './img/magazin-stroy-master/magazin-stroy-master-video.jpeg',
+                    fileName: '../img/magazin-stroy-master/magazin-stroy-master-video.jpeg',
                     type: "video"
                 },
             ]
@@ -476,21 +476,21 @@ export const projectCards: IProjectCard[] = [
         serialNumber: 1,
         title: 'Интернет магазин цветов',
         stackShort: `Nest.js Next.js PostgreSQL`,
-        bgFileName: './img/marketplace_of_flowers/marketplace_of_flowers-bg.png'
+        bgFileName: '../img/marketplace_of_flowers/marketplace_of_flowers-bg.png'
     },
     {
         id: 2,
         serialNumber: 2,
         title: 'Коммутатор IP телефонии',
         stackShort: `React.js WebSocket MobX`,
-        bgFileName: './img/commutators_frontend/commutators_frontend-bg.png'
+        bgFileName: '../img/commutators_frontend/commutators_frontend-bg.png'
     },
     {
         id: 3,
         serialNumber: 3,
         title: 'Тестирование по охране труда',
         stackShort: `Express.js Next.js MongoDB`,
-        bgFileName: './img/safety_and_health/safety_and_health-bg.png'
+        bgFileName: '../img/safety_and_health/safety_and_health-bg.png'
     },
     // {
     //     id: 4,
@@ -504,13 +504,13 @@ export const projectCards: IProjectCard[] = [
         serialNumber: 4,
         title: 'Сайт агентства недвижимости',
         stackShort: `Express.js Next.js`,
-        bgFileName: './img/diva/diva-bg.png'
+        bgFileName: '../img/diva/diva-bg.png'
     },
     {
         id: 5,
         serialNumber: 5,
         title: 'Интернет магазин строительных материалов',
         stackShort: `Express.js React.js`,
-        bgFileName: './img/magazin-stroy-master/magazin-stroy-master-bg.png'
+        bgFileName: '../img/magazin-stroy-master/magazin-stroy-master-bg.png'
     },
 ]
