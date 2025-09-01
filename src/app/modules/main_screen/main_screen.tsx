@@ -15,7 +15,7 @@ const MainScreen: FC<MainScreenProps> = ({ }) => {
             <div className={s.main}>
                 <div className={s.wrap}>
                     <div className={s.blobPhoto}>
-                        <BlobPhoto fileName="/img/main-photo.png" />
+                        <BlobPhoto fileName="./img/main-photo.png" />
                     </div>
                     <div className={s.mainTitle}>
                         <MainTitle />
