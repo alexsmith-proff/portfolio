@@ -421,7 +421,7 @@ export const projects: IProject[] = [
                     type: "image"
                 },
                 {
-                    fileName: .'/img/diva/diva5.png',
+                    fileName: './img/diva/diva5.png',
                     type: "image"
                 },
                 {
