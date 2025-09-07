@@ -79,6 +79,17 @@ export const experienceCards: IExperienceCard[] = [
         dateSince: '2022-01-01'
     },
     {
+        id: 7,
+        title: 'Zustand',
+        image: {
+            width: 75,
+            height: 71,
+            fileName: './img/experience/zustand.png',
+        },
+        link: 'https://zustand-demo.pmnd.rs/',
+        dateSince: '2025-01-01'
+    },
+    {
         id: 8,
         title: 'Jest/RTL',
         image: {

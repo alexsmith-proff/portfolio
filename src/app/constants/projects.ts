@@ -43,27 +43,31 @@ export const projects: IProject[] = [
                 {
                     fileName: '../img/gigaroom/gigaroom8.png',
                     type: "image"
-                },    
+                }, 
                 {
-                    fileName: '../img/gigaroom/1.webm',
+                    fileName: '../img/gigaroom/presentation_gigaroom-it.webm',
                     type: "video"
-                },
-                {
-                    fileName: '../img/gigaroom/2.webm',
-                    type: "video"
-                },
-                {
-                    fileName: '../img/gigaroom/3.webm',
-                    type: "video"
-                },
-                {
-                    fileName: '../img/gigaroom/4.webm',
-                    type: "video"
-                },
-                {
-                    fileName: '../img/gigaroom/5.webm',
-                    type: "video"
-                },
+                },   
+                // {
+                //     fileName: '../img/gigaroom/1.webm',
+                //     type: "video"
+                // },
+                // {
+                //     fileName: '../img/gigaroom/2.webm',
+                //     type: "video"
+                // },
+                // {
+                //     fileName: '../img/gigaroom/3.webm',
+                //     type: "video"
+                // },
+                // {
+                //     fileName: '../img/gigaroom/4.webm',
+                //     type: "video"
+                // },
+                // {
+                //     fileName: '../img/gigaroom/5.webm',
+                //     type: "video"
+                // },
             ],
             previews: [
                 {
@@ -102,22 +106,22 @@ export const projects: IProject[] = [
                     fileName: '../img/gigaroom/1.png',
                     type: "video"
                 },
-                {
-                    fileName: '../img/gigaroom/2.png',
-                    type: "video"
-                },
-                {
-                    fileName: '../img/gigaroom/3.png',
-                    type: "video"
-                },
-                {
-                    fileName: '../img/gigaroom/4.png',
-                    type: "video"
-                },
-                {
-                    fileName: '../img/gigaroom/5.png',
-                    type: "video"
-                },
+                // {
+                //     fileName: '../img/gigaroom/2.png',
+                //     type: "video"
+                // },
+                // {
+                //     fileName: '../img/gigaroom/3.png',
+                //     type: "video"
+                // },
+                // {
+                //     fileName: '../img/gigaroom/4.png',
+                //     type: "video"
+                // },
+                // {
+                //     fileName: '../img/gigaroom/5.png',
+                //     type: "video"
+                // },
             ]
         }
     },
