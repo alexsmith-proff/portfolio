@@ -6,7 +6,7 @@ export const projects: IProject[] = [
     {
         id: 1,
         serialNumber: 1,
-        title: 'Конструктор куни',
+        title: 'Конструктор кухни',
         description: 'Конструктор кухни. В данном проекте реализован движок конструктора, личный кабинет клиента. Конструктор кухни легко интегрируется на сайт.',
         stackExpand: 'Nest.js, TypeScript, PostgreSQL, telegramBotApi, Next.js, Zustand',
         media: 
